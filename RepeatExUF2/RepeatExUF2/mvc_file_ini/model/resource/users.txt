@@ -1,0 +1,5 @@
+admin;1234;20;2;1;aa
+apples;1234;20;2;1;aa
+orange;1234;20;2;1;aa
+pears;1234;20;2;1;aa
+kiwi;1234;20;2;1;aa

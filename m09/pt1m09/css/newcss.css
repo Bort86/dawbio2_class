@@ -1,0 +1,31 @@
+div#nube {
+    box-shadow: 0 0 15px #000;
+    width: 420px;
+    height: 250px;
+    padding: 0;
+    background: url("../img/nube.jpg") no-repeat top left;
+}
+
+div#gota {
+    padding: 0;
+    background: url("../img/gotas.jpg") no-repeat bottom right;
+    width: 420px;
+    height: 200px;
+    float: left;
+    right: 100%;
+    left: 145px;
+    /*top: 100px;*/
+
+    /* Firefox */
+    -moz-transition: height 1s linear 0.2s;
+    /* Chrome / Safari*/
+    -webkit-transition: height 1s linear 0.2s;
+    /* Opera */
+    -o-transition: height 1s linear 0.2s;
+    /* Default */
+    transition: height 1s linear 0.2s;
+}
+
+div#gota:hover {
+    height: 400px;
+}

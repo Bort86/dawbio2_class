@@ -1,0 +1,5 @@
+browser position chr11:5225463-5227071
+track name="PPP1R1B_pista2_Rodriguez" description="PPP1R1B_pista2_Rodriguez" visibility=2 color=0,128,0 
+#chrom   chromStart  chromEnd   name  score strand thickStart   thickEnd itemRgb blockCount blockSizes   blockStarts
+chr11     5225463   5227071   itemA  960     -     5225597   5227021    0,0,255        3       263,222,142,  0,1113,1466
+

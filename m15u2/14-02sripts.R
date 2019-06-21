@@ -1,0 +1,106 @@
+iris
+
+summary(iris)
+
+head (iris)
+
+length (iris)
+
+iris$Sepal.Length
+
+length(iris$Sepal.Length)
+
+min(iris$Sepal.Length)
+
+max(iris$Sepal.Length)
+
+range(iris$Sepal.Length)
+
+mean(iris$Sepal.Length)
+
+median(iris$Sepal.Length)
+
+table(iris$Sepal.Length)
+
+sort(table(iris$Sepal.Length))
+
+daw <- c(0,1,9,10)
+daw
+var(daw)
+var(daw) * (length(daw)-1)/length(daw)
+sd(daw)
+
+sd(iris$Sepal.Length)
+
+var(iris$Sepal.Length)
+
+max(iris$Petal.Length)
+
+min(iris$Petal.Length)
+
+range(iris$Petal.Length)
+
+mean(iris$Petal.Length)
+
+median(iris$Petal.Length)
+
+var(iris$Petal.Length)
+
+sd(iris$Petal.Length)
+
+quantile(iris$Petal.Length)
+
+IQR(iris$Petal.Length)
+
+petalo<-iris$Petal.Length
+
+boxplot(petalo)
+
+petalo
+
+petalo[150]
+
+demo(graphics)
+
+x <- seq(-10,10)
+x
+y<- x^2
+y
+plot(x,y)
+plot (x,y,main="This isn't your average plot anymore")
+plot (x,y,main="This isn't your average plot anymore", type = "p")
+plot (x,y,main="This isn't your average plot anymore", type = "l")
+plot (x,y,main="This isn't your average plot anymore", type = "b")
+plot (x,y,main="This isn't your average plot anymore", type = "o")
+plot (x,y,main="This isn't your average plot anymore", type = "h")
+plot (x,y,main="This isn't your average plot anymore", type = "s")
+plot (x,y,main="This isn't your average plot anymore", type = "S")
+plot (x,y,main="This isn't your average plot anymore", type = "n")
+
+plot(x,y, pch="*")
+plot(x,y, pch = "no")
+plot(x,y, main="this isn't your average plotgraph anymore", xlab="abscisas", ylab="ordenadas")
+plot(x,y, pch=18, col="5", xlim=c(-5,5), ylim=c(0,60))
+x<- seq (-10,10,by=0.1)
+x
+y <- x^2
+y
+plot(x,y, type="p")
+x<-seq(-10,10)
+y = x^2
+par(mfrow=c(2,2))
+plot(y)
+hist(y)
+boxplot(y)
+barplot(y)
+A <- c(15,12,23,3,38)
+names(A)<-c("Barcelona", "Hospitalet", "Cornella", "Rubi", "Lamerge")
+png(filename = "nombre_de_mi_gráfico.png")
+plot(A, type="c")
+dev.off()
+getwd()
+?png
+A <- c(15,12,23,3,38)
+B <- c(14,7,6,19,3)
+plot(A, type="o", col ="red", xlab ="City", ylab="Number", main ="Another one bites the dust")
+lines(B, type ="o", col ="blue")

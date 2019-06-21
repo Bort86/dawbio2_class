@@ -1,0 +1,182 @@
+#background{
+    background-image: url("../images/fondo/1.jpg");
+    width: 800px;
+    height: 500px;
+    position:fixed;
+    background-size:cover;
+    background-repeat:no-repeat;
+
+    animation-name: fondo;
+    animation-duration: 10s;
+    animation-delay:0s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+
+  }
+  @keyframes fondo{
+      0%{
+
+      }
+      100%{
+
+      }
+  }
+
+#fish1{
+    background-image: url("../images/piranar/0.png");
+    width: 75px;
+    height: 62px;
+    position: absolute;
+    left: 0px;
+    top: 250px;
+
+
+    animation-name: fish1;
+    animation-duration: 10s;
+    animation-delay:0s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+
+  }
+
+  @keyframes fish1{
+    0%{
+        left: 0px;
+        top: 250px;
+    }
+
+    50%{
+      left: 400px;
+      top: 250px;
+      animation-timing-function: ease-out;
+      opacity: 1;
+    }
+
+    100%{
+        left: 400px;
+        top: 250px;
+        opacity: 0;
+    }
+}
+
+#shark{
+  background-image: url("../images/tiburon/32.png");
+  width: 140px;
+  height: 70px;
+  position: absolute;
+  right: 0px;
+  bottom: : 0px;
+
+
+  animation-name: shark;
+  animation-duration: 10s;
+  animation-delay:0s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-direction: normal;
+}
+
+@keyframes shark{
+  0%{
+      right: 0px;
+      bottom: 0;
+  }
+
+  50%{
+    right: 0px;
+    bottom: 0;
+    transform: scale(1);
+  }
+
+  55%{
+    right: 320px;
+    bottom: 220px;
+    transform: scale(2);
+  }
+  65% {
+    right: 320px;
+    bottom: 220px;
+  }
+
+  100%{
+      right: 750px;
+      bottom: 220px;
+
+  }
+
+}
+
+#fish2{
+  background-image: url("../images/piranav/39.png");
+  width: 75px;
+  height: 62px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+
+
+  animation-name: fish2;
+  animation-duration: 10s;
+  animation-delay:0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: ease-out;
+
+}
+
+@keyframes fish2 {
+  0%{
+    background-image: url("../images/piranav/39.png");
+    left: 0px;
+    bottom: 0px;
+
+  }
+
+  45%{
+    background-image: url("../images/piranav/39.png");
+    left: 720px;
+    bottom: 0px;
+  }
+  60%{
+    background-image: url("../images/piranav/20.png");
+    left: 720px;
+    bottom: 0px;
+
+  }
+  100%{
+    background-image: url("../images/piranav/20.png");
+    left: 0px;
+    bottom: 0px;
+  }
+}
+
+#fish3{
+  width: 65px;
+  height: 62px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-image: url("../images/renavc/20.png");
+
+  animation-name: fish3;
+  animation-duration: 10s;
+  animation-delay:0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function:steps();
+}
+
+@keyframes fish3 {
+  0%{
+    right: 0px;
+    top: 0px;
+  }
+
+  100%{
+    right: 750px;
+    top: 0px;
+
+  }
+}

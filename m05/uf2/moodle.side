@@ -1,0 +1,335 @@
+{
+  "id": "b5dd287b-1412-4a10-97f0-d3a30065d31c",
+  "version": "2.0",
+  "name": "moodle",
+  "url": "https://campus.proven.cat",
+  "tests": [{
+    "id": "76d72970-1d03-48d1-8460-06ad433d24b5",
+    "name": "T01 Login incorrecto",
+    "commands": [{
+      "id": "5652356a-432b-41c0-80ab-87000bdf2750",
+      "comment": "",
+      "command": "open",
+      "target": "/login/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5aeb92e-0404-466c-b76b-1e4c6603273a",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06bc9142-2b3e-42a9-a969-f106da9f912e",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1556648925386_36']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "asdasd"
+    }, {
+      "id": "f1a51e0b-fd43-4f05-b203-b2456f5242b3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.rememberpass",
+      "targets": [
+        ["css=.rememberpass", "css:finder"],
+        ["xpath=//form[@id='login']/div[3]", "xpath:idRelative"],
+        ["xpath=//form/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d79b5ab-c9fb-4ddd-a601-637d4bca2f7d",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1556648925386_37']/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71166c6b-f6e3-4003-bb34-826f37417056",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1556648925386_43']/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "asdasd"
+    }, {
+      "id": "7d9ea65b-c19b-4416-8066-fd515074b5e5",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//input[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "041e392e-96ff-47cf-9a88-439df28c3943",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.error",
+      "targets": [
+        ["css=.error", "css:finder"],
+        ["xpath=//section[@id='region-main']/div/div/div/div/div/span", "xpath:idRelative"],
+        ["xpath=//div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Inici de sessió incorrecte, torneu a intentar-ho')]", "xpath:innerText"]
+      ],
+      "value": "Inici de sessió incorrecte, torneu a intentar-ho"
+    }]
+  }, {
+    "id": "cbcc5a64-0db6-41c6-b15d-16373c562fca",
+    "name": "T02 Login Correcto",
+    "commands": [{
+      "id": "14a8a917-1466-466b-821b-49ea53d66b46",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33ee716f-b911-454f-9fb1-e7f393586339",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "912x862",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59de66c2-db79-48cf-a402-094b31da56bb",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["css=#title", "css:finder"],
+        ["xpath=//h1[@id='title']", "xpath:attributes"],
+        ["xpath=//div[@id='page-header']/div/div/div/a/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Institut Provençana')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a592a2ff-0aa6-4f04-a429-b28319d88aa2",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e5acf3b-089f-4a3a-83aa-c778310a3dfb",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1556648989950_36']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "prod27043"
+    }, {
+      "id": "3244a9c9-e3f6-4ea1-b712-e6a3289dbfb2",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1556648989950_37']/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b39b0952-2781-4a82-a304-1593fa91d91c",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1556648989950_42']/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "Sp3Kwn"
+    }, {
+      "id": "0ca6a0fa-1b53-4e99-9311-2576b06c427a",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//input[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39b93574-9d40-4a0c-a224-a10b7ff89bcf",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Pablo Sebastian",
+      "targets": [
+        ["linkText=Pablo Sebastian", "linkText"],
+        ["css=.usermenu .dropdown > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Pablo Sebastian')]", "xpath:link"],
+        ["xpath=//nav[@id='essentialnavbar']/div/div/div/div/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://campus.proven.cat/my/index.php')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Pablo Sebastian')]", "xpath:innerText"]
+      ],
+      "value": "Pablo Sebastian"
+    }]
+  }, {
+    "id": "745f6521-81bc-4c99-abca-f16fb1ac1601",
+    "name": "T03 Verify Profile Data",
+    "commands": [{
+      "id": "b081a654-af91-4204-b9a1-ea8974a10ced",
+      "comment": "",
+      "command": "open",
+      "target": "/user/profile.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a3721cf-1f2f-4888-88b2-a1cd097bc9a6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "912x862",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "84e4031c-4485-45b3-a104-bbe4eff25543",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pull-right > li:nth-child(1) em",
+      "targets": [
+        ["css=.pull-right > li:nth-child(1) em", "css:finder"],
+        ["xpath=//nav[@id='essentialnavbar']/div/div/div/div/div/div/ul/li/ul/li/a/em", "xpath:idRelative"],
+        ["xpath=//em", "xpath:position"],
+        ["xpath=//em[contains(.,'Pablo Sebastian Rodriguez -')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8722ceb-6cb1-4885-9306-2a6813b05c0d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-header-headings > h1",
+      "targets": [
+        ["css=.page-header-headings > h1", "css:finder"],
+        ["xpath=//div[@id='page-top-header']/div[2]/div[2]/h1", "xpath:idRelative"],
+        ["xpath=//div[2]/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Pablo Sebastian Rodriguez -')]", "xpath:innerText"]
+      ],
+      "value": "Pablo Sebastian Rodriguez -"
+    }, {
+      "id": "3580dee9-0846-43a6-ac70-698214a4ebbf",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.page-header-headings > h1",
+      "targets": [
+        ["css=.page-header-headings > h1", "css:finder"],
+        ["xpath=//div[@id='page-top-header']/div[2]/div[2]/h1", "xpath:idRelative"],
+        ["xpath=//div[2]/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Pablo Sebastian Rodriguez -')]", "xpath:innerText"]
+      ],
+      "value": "Pablo Sebastian Rodriguez -"
+    }]
+  }, {
+    "id": "a482ac7f-5d27-49bb-8465-4782edad9dac",
+    "name": "T04 Logout",
+    "commands": [{
+      "id": "2626fbaf-12aa-4935-ae00-14b85ae03760",
+      "comment": "",
+      "command": "open",
+      "target": "/my/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1456ba7-ded0-46f8-ae87-e70c44fd742c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "912x862",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ba49981-7a1a-464b-9e44-21429add06a9",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(12) em",
+      "targets": [
+        ["css=li:nth-child(12) em", "css:finder"],
+        ["xpath=//nav[@id='essentialnavbar']/div/div/div/div/div/div/ul/li/ul/li[9]/a/em", "xpath:idRelative"],
+        ["xpath=//li[9]/a/em", "xpath:position"],
+        ["xpath=//em[contains(.,'Surt')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "62f26ea5-f72e-42bb-88a4-b67417c4f316",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Visitant",
+      "targets": [
+        ["linkText=Visitant", "linkText"],
+        ["css=.usermenu .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Visitant')]", "xpath:link"],
+        ["xpath=//nav[@id='essentialnavbar']/div/div/div/div/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://campus.proven.cat/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Visitant')]", "xpath:innerText"]
+      ],
+      "value": "Visitant"
+    }]
+  }],
+  "suites": [{
+    "id": "5dbb6f55-6863-4188-a523-e8f4c65ae082",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["76d72970-1d03-48d1-8460-06ad433d24b5"]
+  }],
+  "urls": ["https://campus.proven.cat/"],
+  "plugins": []
+}

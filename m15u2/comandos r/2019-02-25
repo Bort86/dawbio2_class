@@ -1,0 +1,44 @@
+*R trabaja con objetos: 
+- nombre
+- contenido
+- atributos: especifican qué tipo de datos tiene ese objeto
+
+El resultado de un estudio estadístico no solo depende del contenido, sino también del atributo que tenga.
+Técnicamente, el resultado de la acción de una función sobre un objeto depende también de los atributos del objeto.
+
+Todo objeto tiene 2 atributos intrínsecos:
+1. tipo -> mode(): es la clase básica del elemento: numérico, booleano, complex, caracter
+2. longitud -> length(): número de elementos que tiene el objeto
+
+Dato NA (Not Avaible)-> NA es independiente del tipo
+
+Parámetros no intrínsecos -> typeof(), class(), store.mode(), object.size(), attriubtes()
+
+*Tipo de estructura de almacenamiento de datos(objetos) en R:
+
+Vectores -> Cadenas unidimensionales (1 fila o columna) de valores, todos de un único tipo
+	- se define con "vector"
+	- num, char, complejo, lógico
+
+Matrices -> Estructuras bidimensionales, donde todos los datos son del mismo tipo
+	- matrix
+	- num, char, complejo, lógico
+
+Array(Arreglo) -> Matriz de dimensión k. Todos los valores son del mismo tipo
+	- array()
+	- num, char, complejo, lógico
+
+Factores -> estructura de datos que representa variables categóricas. Ej: Colores, meses
+	- factor()
+	- num, char
+
+Dataframe -> estructura bidimensionales donde los datos pueden ser de tipo diferente. Ej: bd, hoja cálculo
+	- data.frame()
+	- num, char, complejo, lógico
+
+Lista -> Objetos genéricos que corresponden a colecciones de distintos objetos, que pueden ser de diferente tipo, incluídas otras listas
+	- num, char, complejo, lógico, funciones, expresiones	
+
+TS -> series temporales (no nos ocuparemos de ellas)
+
+* Reglas de coerción

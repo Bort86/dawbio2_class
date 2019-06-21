@@ -1,0 +1,71 @@
+exons_21 <- read.table("/home/bort/hgTables")
+
+1. ¿Cuántos exones tiene el cromosoma 21?
+long_exons <- exons_21[,3]-exons_21[,2]
+length(long_exons)
+
+2. ¿Cúal es el mayor exón?
+max(long_exons)
+
+3. ¿Cuál es el menor?
+min(long_exons)
+
+4. Media
+mean(long_exons)
+
+5. Mediana
+median(long_exons)
+
+6. Cuartiles
+quantile(long_exons)
+
+7. Percentiles (deciles)
+quantile(long_exons, prob=seq(0,1, length = 11))
+
+8. IQR
+quantile(long_exons, prob=seq(0,1, length = 11))
+IQR<-quantile(long_exons, c(.75)) - quantile(long_exons, c(.25))
+IQR(long_exons)
+
+9. varianza
+var(long_exons)
+
+10. desviación estandar
+sd(long_exons)
+
+11. coeficiente de variación
+cv<-sd(long_exons)/mean(long_exons)
+
+12. tabla
+table(long_exons)
+
+13. str
+str(long_exons)
+
+14. summary
+summary(long_exons)
+
+
+#############################################################################
+- poner nombres a elementos de un vector
+fruta <- c(3.5, 1.2, 2.5, 3)
+names(fruta)<-c("naranja", "pera", "manzana", "platano")
+
+o
+
+fruta<- c(naranja = 3.5, pera= 1.2, manzana=2.5, platano=3)
+#############################################################################
+
+Funciones de matrices
+
+dim() ----> dimensiones de la matriz
+dimnames()
+colnames()
+rownames()
+is.matrix
+[,] <<<- acceder a dimensiones de una matriz
+cbind
+rbind
+
+
+

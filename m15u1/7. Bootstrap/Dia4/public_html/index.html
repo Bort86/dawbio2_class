@@ -1,0 +1,246 @@
+<!-- CHULETA AMB CLASSES BOOTSTRAP-->
+<!--https://hackerthemes.com/bootstrap-cheatsheet/-->
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" >
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js" ></script>
+    <!-- https://www.w3schools.com/cssref/css_units.asp-->
+    <style>
+        .fondo{background:blue;}
+        .borde{border: 1px #000 solid;text-align:center; height:50px;}
+        .color1{background: #eeeeee; height:50px}
+        .color2{background: #fcc314;}
+        .color3{background: #94ac3c;}
+        .color4{background: #295ba7;}
+        .slider{
+          background: url("images/bg.jpg");
+          
+          height: 100vh;
+          background-size: cover;
+          background-position: center;
+        }
+        body{
+          position: relative;
+        }
+    </style>
+    <title>Hello, world!</title>
+  </head>
+  <body data-spy="scroll" data-target="#navbar-example">
+    
+    <!-- Scrollspy: https://getbootstrap.com/docs/4.3/components/scrollspy/  -->
+<nav  class="navbar navbar-light fixed-top bg-light">
+    <a class="navbar-brand" href="#">Example of Scrollspy</a>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#primer">Primer</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#segon">Segon</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+           aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#tercer">Tercer</a>
+          <a class="dropdown-item" href="#quart">Quart</a>
+          <div role="separator" class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#cinquè">Cinquè</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+<!-- Carousel: https://getbootstrap.com/docs/4.3/components/carousel/ -->
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item" style="height: 100vh">
+      <img class="w-100" src="images/slide1.jpg" alt="First slide">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Natura</h5>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Soluta ullam doloribus debitis voluptate animi omnis ea? 
+            Nostrum odit facere eos ut doloremque quidem nulla omnis sint. 
+            Corporis similique quaerat reiciendis!</p>
+      </div>
+    </div>
+    <div class="carousel-item active" style="height: 100vh">
+      <img class="w-100" src="images/slide2.jpg" alt="Second slide">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Zebres</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fuga
+            accusamus necessitatibus suscipit at facere eos iusto accusantium molestiae
+            quibusdam explicabo officiis dolore, excepturi quis eaque, assumenda 
+            tenetur rem provident.</p>
+      </div>
+    </div>
+    <div class="carousel-item" style="height: 100vh">
+      <img class="w-100" src="images/slide3.jpg" alt="Third slide">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Feria</h5>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic dignissimos
+            eum fugit veniam blanditiis consequuntur. Soluta corporis laboriosam ut
+            cupiditate doloribus? Quisquam perferendis, error eligendi nobis atque
+            esse et saepe.</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Posterior</span>
+  </a>
+</div>
+
+
+<!-- Breadcrumb: https://getbootstrap.com/docs/4.3/components/breadcrumb/    -->
+<nav aria-label="breadcrumb">
+    <!--<ol class="breadcrumb">-->
+    <ol class="breadcrumb bg-warning">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Current page</li>
+    </ol>
+  </nav>
+
+
+
+  <div data-spy="scroll" data-target="#navbar-example" data-offset="0">
+    <h4 class="ml-3" id="primer">
+      Primer    
+    </h4>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quo labore
+        quia voluptatem eum quidem quaerat laborum atque molestias consequuntur eaque
+        eius, alias possimus et velit veritatis quibusdam? Reprehenderit, necessitatibus.  </p>
+    
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quo labore
+        quia voluptatem eum quidem quaerat laborum atque molestias consequuntur eaque
+        eius, alias possimus et velit veritatis quibusdam? Reprehenderit, necessitatibus.  </p>
+   
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quo labore 
+        quia voluptatem eum quidem quaerat laborum atque molestias consequuntur eaque 
+        eius, alias possimus et velit veritatis quibusdam? Reprehenderit, necessitatibus.  </p>
+   
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quo labore 
+        quia voluptatem eum quidem quaerat laborum atque molestias consequuntur eaque
+        eius, alias possimus et velit veritatis quibusdam? Reprehenderit, necessitatibus.  </p>
+   
+    <h4 class="ml-3" id="segon">Segon</h4>
+    
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quo labore quia
+        voluptatem eum quidem quaerat laborum atque molestias consequuntur eaque eius, 
+        alias possimus et velit veritatis quibusdam? Reprehenderit, necessitatibus.  </p>
+   
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quo labore quia
+        voluptatem eum quidem quaerat laborum atque molestias consequuntur eaque eius, 
+        alias possimus et velit veritatis quibusdam? Reprehenderit, necessitatibus.  </p>
+   
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quo labore quia 
+        voluptatem eum quidem quaerat laborum atque molestias consequuntur eaque eius, 
+        alias possimus et velit veritatis quibusdam? Reprehenderit, necessitatibus.  </p>
+   
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab consectetur placeat, 
+        magni alias saepe incidunt ipsam perferendis sed cum fuga laudantium. Rerum dolorem
+        obcaecati commodi libero, explicabo iste sit maxime?  </p>
+    <h4 class="ml-3" id="tercer">Tercer</h4>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quo labore quia
+        voluptatem eum quidem quaerat laborum atque molestias consequuntur eaque eius, 
+        alias possimus et velit veritatis quibusdam? Reprehenderit, necessitatibus.  </p>
+   
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quo labore quia 
+        voluptatem eum quidem quaerat laborum atque molestias consequuntur eaque eius, 
+        alias possimus et velit veritatis quibusdam? Reprehenderit, necessitatibus.  </p>
+   
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quo labore quia 
+        voluptatem eum quidem quaerat laborum atque molestias consequuntur eaque eius, 
+        alias possimus et velit veritatis quibusdam? Reprehenderit, necessitatibus.  </p>
+   
+
+    
+    <!-- Badges: https://getbootstrap.com/docs/4.3/components/badge/  -->
+
+    <!-- Collapse: https://getbootstrap.com/docs/4.3/components/collapse/  -->
+   
+    <a id="quart" class="btn btn-light" data-toggle="collapse" href="#collapseExample" role="button"
+       aria-expanded="false" aria-controls="collapseExample">
+        <h4 class="ml-1" >Quart <span class="badge badge-warning">New</span> </h4></a>
+    <div class="collapse" id="collapseExample">
+        
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quo labore 
+                quia voluptatem eum quidem quaerat laborum atque molestias consequuntur eaque
+                eius, alias possimus et velit veritatis quibusdam? Reprehenderit, necessitatibus.  </p>
+   
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quo labore
+                quia voluptatem eum quidem quaerat laborum atque molestias consequuntur eaque
+                eius, alias possimus et velit veritatis quibusdam? Reprehenderit, necessitatibus.  </p>
+           
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quo labore 
+                quia voluptatem eum quidem quaerat laborum atque molestias consequuntur 
+                eaque eius, alias possimus et velit veritatis quibusdam? Reprehenderit, necessitatibus.  </p>
+           
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe enim 
+                nemo fugit facilis soluta, labore cum quod similique ex. Dignissimos
+                error laudantium quis labore? Deserunt eos maiores quae enim fugiat.</p>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit id a 
+                ullam autem eligendi doloremque, nobis ipsa quidem mollitia rem 
+                ex fugit dignissimos maxime laborum, dolore recusandae veniam consectetur iste?</p>
+  
+       
+      </div>
+    
+
+    <h4 class="ml-3" id="cinque">  Cinquè</h4>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quo labore
+        quia voluptatem eum quidem quaerat laborum atque molestias consequuntur eaque
+        eius, alias possimus et velit veritatis quibusdam? Reprehenderit, necessitatibus.  </p>
+   
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quo labore
+        quia voluptatem eum quidem quaerat laborum atque molestias consequuntur eaque
+        eius, alias possimus et velit veritatis quibusdam? Reprehenderit, necessitatibus.  </p>
+   
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quo labore
+        quia voluptatem eum quidem quaerat laborum atque molestias consequuntur eaque
+        eius, alias possimus et velit veritatis quibusdam? Reprehenderit, necessitatibus.  </p>
+   
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nesciunt nobis
+        ad recusandae earum dolore debitis mollitia reprehenderit a fugit error ea, ipsam
+        necessitatibus laboriosam autem accusamus delectus neque veniam?</p>
+ </div>  
+
+<!-- Pagination: https://getbootstrap.com/docs/4.3/components/pagination/    -->
+<nav aria-label="Search results with icons">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+    </body>
+</html>

@@ -1,0 +1,5 @@
+>>>>Listas (List)
+. Estructuras de almacenamientos de objetos que pueden ser de diferentes clases(tipos): numéricos, caracteres, vectores, matrices, funciones, dataframes, array, list,  etc.
+. Los componentes de las listas pueden tener un número de elementos diferentes (los objetos que almacena pueden ser de dimensiones diferentes)
+. Se crean con la función list()
+. Acceso [], [[]], $

@@ -1,0 +1,20 @@
+history
+len(pestis_gb_rec.features)
+pestis_gb_rec
+from Bio import SeqIO
+from Bio.Seq import Seq
+from Bio.Alphabet import IUPAC
+from Bio.SeqRecord import SeqRecord
+seq = Seq("GATC")
+seq_rec = SeqRecord(seq)
+repr()
+history
+yersinia_pestis_fasta_rec = SeqIO.read("NC_005816.fna", "fasta")
+yersinia_pestis_fasta_rec.name
+yersinia_pestis_fasta_rec.id
+yersinia_pestis_genbank = SeqIO.read("NC_005816.gb", "genbank")
+from Bio.SeqFeature import SeqFeature
+yersinia_pestis_genbank.features
+yersinia_pestis_genbank.annotations
+yersinia_pestis_genbank.annotations.keys()
+yersinia_pestis_genbank.annotations["taxonomy"]

@@ -1,0 +1,94 @@
+LOCUS       NM_174104                954 bp    mRNA    linear   MAM 15-SEP-2018
+DEFINITION  Bos taurus lysozyme 3 (LYZ3), mRNA.
+ACCESSION   NM_174104
+VERSION     NM_174104.2
+KEYWORDS    RefSeq.
+SOURCE      Bos taurus (cattle)
+  ORGANISM  Bos taurus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Laurasiatheria; Cetartiodactyla; Ruminantia;
+            Pecora; Bovidae; Bovinae; Bos.
+REFERENCE   1  (bases 1 to 954)
+  AUTHORS   Irwin DM, White RT and Wilson AC.
+  TITLE     Characterization of the cow stomach lysozyme genes: repetitive DNA
+            and concerted evolution
+  JOURNAL   J. Mol. Evol. 37 (4), 355-366 (1993)
+   PUBMED   8308905
+REFERENCE   2  (bases 1 to 954)
+  AUTHORS   Irwin DM and Wilson AC.
+  TITLE     Multiple cDNA sequences and the evolution of bovine stomach
+            lysozyme
+  JOURNAL   J. Biol. Chem. 264 (19), 11387-11393 (1989)
+   PUBMED   2738070
+COMMENT     PROVISIONAL REFSEQ: This record has not yet been subject to final
+            NCBI review. The reference sequence was derived from M26242.1.
+            On Dec 4, 2007 this sequence version replaced NM_174104.1.
+            
+            ##Evidence-Data-START##
+            Transcript exon combination :: DN283712.1, CB221032.1 [ECO:0000332]
+            RNAseq introns              :: single sample supports all introns
+                                           SAMN03145498 [ECO:0000348]
+            ##Evidence-Data-END##
+PRIMARY     REFSEQ_SPAN         PRIMARY_IDENTIFIER PRIMARY_SPAN        COMP
+            1-954               M26242.1           1-954
+FEATURES             Location/Qualifiers
+     source          1..954
+                     /organism="Bos taurus"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9913"
+                     /chromosome="5"
+                     /map="5q23"
+     gene            1..954
+                     /gene="LYZ3"
+                     /note="lysozyme 3"
+                     /db_xref="BGD:BT10367"
+                     /db_xref="GeneID:281289"
+     exon            2..144
+                     /gene="LYZ3"
+                     /inference="alignment:Splign:2.1.0"
+     CDS             9..452
+                     /gene="LYZ3"
+                     /EC_number="3.2.1.17"
+                     /note="lysozyme C-3; 1,4-beta-N-acetylmuramidase C"
+                     /codon_start=1
+                     /product="lysozyme C-3 precursor"
+                     /protein_id="NP_776529.1"
+                     /db_xref="BGD:BT10367"
+                     /db_xref="GeneID:281289"
+                     /translation="MKALIILGFLFLSVAVQGKVFERCELARTLKKLGLDGYKGVSLA
+                     NWLCLTKWESSYNTKATNYNPSSESTDYGIFQINSKWWCNDGKTPNAVDGCHVSCSEL
+                     MENDIAKAVACAKHIVSEQGITAWVAWKSHCRDHDVSSYVQGCTL"
+     sig_peptide     9..62
+                     /gene="LYZ3"
+                     /inference="COORDINATES: ab initio prediction:SignalP:4.0"
+     mat_peptide     63..449
+                     /gene="LYZ3"
+                     /product="lysozyme C-3"
+     exon            145..309
+                     /gene="LYZ3"
+                     /inference="alignment:Splign:2.1.0"
+     exon            310..385
+                     /gene="LYZ3"
+                     /inference="alignment:Splign:2.1.0"
+     exon            386..950
+                     /gene="LYZ3"
+                     /inference="alignment:Splign:2.1.0"
+ORIGIN      
+        1 aagtcaacat gaaggctctc attattctgg ggtttctctt cctttctgtc gctgtccaag
+       61 gcaaggtctt tgagagatgt gagcttgcca gaactctgaa gaaacttgga ctggatggct
+      121 ataagggagt cagcctggca aactggttgt gtttgaccaa atgggaaagc agttataaca
+      181 caaaagctac aaactacaat cctagcagtg aaagcactga ttatgggata tttcagatca
+      241 acagcaaatg gtggtgtaat gatggcaaaa cccccaacgc agttgacggc tgtcatgtat
+      301 cctgcagcga attaatggaa aatgacatcg ccaaagcggt agcatgtgca aagcatattg
+      361 tcagtgagca aggcattaca gcatgggtgg catggaaaag tcactgtcga gaccatgacg
+      421 tcagcagtta tgttcagggt tgcaccctgt aactgtggag ttatcattct tcagctcatt
+      481 ttgtctcttt ttcacattaa ggaagtagta gttgagtgaa agtttatacc accattcctt
+      541 caaacaaata atatttttac agaaacagga gcatatggtc cttcttctaa gaggcttaat
+      601 gtttacctga tgcgttaact gtttgttaat aggcctacaa tattattcag tgtgctaaca
+      661 gaactaatgt tggtaaatat ttatctaaac tctcaattat caaatatatc tccagtacat
+      721 tcagttctta atcaaagaaa gatcacttat acatcttgtt gatcatgaag gaatataaag
+      781 agggattaga agacctgttt cttttcctta attttattat catagattca tgcattatga
+      841 ctaaattcag atgagattgc cagtattgaa ataattgcta attaactata gatatgaaat
+      901 gatgcatctg taaaaaatac agacattttc attaaaaacc ttgcagttca aaaa
+//
+

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ayudanos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css" >
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <!--Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+              integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <script src="js/bootstrap.min.js" ></script>
+        <style>
+            .slider{
+                background: url("image/fondo-azul.jpg");
+
+                height: 100vh;
+                background-size: cover;
+                background-position: center;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Navbar -->
+        <nav id="kakarot" class="navbar navbar-expand-md navbar-light bg-primary text-light sticky-top">
+            <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#quien">Quiénes Somos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mx-auto order-0">
+                <a class=" navbar-brand mx-auto text-light" href="#"><i class="fas fa-leaf"></i>Enfermedades Raras</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ayudanos">Ayúdanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com/webmaniac">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary btn-sm" rel="publisher"
+                           href="https://plus.google.com/shahnuralam">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Section con form -->
+        <section class="container-fluid slider d-flex justify-content-center align-items-center">
+            <div class="d-flex flex-column">
+                <h1 class="display-4 p-2 text-white"> ENFERMEDADES RARAS </h1>
+                <div class="p-2">
+                    <form action="action" class="bg-secondary">
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="name">Name: </label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+                        </div>
+                        <!--Modal-->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#greetModal">
+                            Sign in
+                        </button>
+                        <div class="modal fade" id="greetModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Thanks, we'll keep in touch
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- BreadCrumb-->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Ayúdanos</li>
+            </ol>
+        </nav>
+        <!--ScrolSpy -->
+        <div data-spy="scroll" data-target="#kakarot" data-offset="0">
+
+            <!--Quienes somos -->
+            <div id="quien">
+                <h1 class="display-4 lead">Nuestra misión</h1>
+
+                <p>ER une a toda la comunidad de familias con enfermedades raras en España, haciendo 
+                    visibles sus necesidades comunes y proponiendo soluciones para mejorar su calidad de vida,
+                    representando sus intereses, defendiendo sus derechos y promoviendo mejoras concretas para
+                    lograr su plena inclusión social.</p>
+
+                <h1 class="display-4 lead">Nuestra visión</h1>
+
+                Queremos que ER sea reconocida como una organización de referencia de las enfermedades raras 
+                en España, América Latina y Europa, por su capacidad de representación y defensa de los 
+                derechos de nuestro colectivo, por la calidad de nuestros servicios y por la cohesión de su 
+                movimiento asociativo, que innova, es ética y sostenible.
+
+                <h1 class="display-4 lead">Nuestros valores</h1>
+
+                ER se compromete a cumplir con su misión, siguiendo los siguientes valores:
+
+                El valor de lo minoritario, la unidad y las personas: En ER todos tenemos voz, sin importar
+                la frecuencia de nuestra enfermedad. La diversidad y la unión nos hace fuertes. Crecemos unidos
+                a través del movimiento asociativo, buscando soluciones y construyendo un proyecto común. Las personas son el eje primordial de nuestra misión, las protagonistas del cambio.
+
+                Equidad: Este valor impulsa nuestro espíritu reivindicativo. Luchamos por la igualdad
+                de oportunidades de las personas con ER, así como para garantizar la equidad social,
+                sanitaria, laboral y educativa.
+
+                Participación: Creemos en la participación como la esencia de nuestra voz. En ER 
+                queremos estar abiertos al diálogo y al debate de ideas como clave para conseguir
+                una organización cohesionada.
+
+                Solidaridad: Apostamos por un sistema colaborativo entre las distintas asociaciones
+                y la prestación de servicios conjuntos que garanticen que lleguen a las asociaciones con
+                independencia de su tamaño, permitiendo así aprovechar sinergias.
+
+                Calidad: Porque buscamos la excelencia y la mejora continua en todos 
+                nuestros proyectos y actividades.
+
+                Sostenibilidad: Entendemos la sostenibilidad desde la eficacia en la gestión y 
+                optimización de nuestros recursos, así como en la búsqueda del equilibrio económico
+                y la viabilidad futura.
+
+                Transparencia: Queremos corresponder con transparencia y credibilidad la 
+                confianza que se deposita en nuestra Federación. Por ello, una relación de 
+                confianza con todos nuestros colaboradores desde la transparencia y la rendición de cuentas.
+
+                En los últimos años nuestra organización ha experimentado un gran crecimiento,
+                tanto en número de personas y entidades asociadas, como en actividad e impacto social.
+
+                Por ello se ha visto necesario establecer un Código Ético en que se recoja
+                un sistema de valores compartido, unas directrices que orienten y definan la 
+                forma de ser y actuar de ER (y por tanto de todas las personas que la componen).
+
+                El Código ético es un instrumento más para alcanzar mejor la misión que
+                nos hemos propuesto: mejorar la calidad de vida de las personas con enfermedades raras.
+
+                Este documento recoge los valores, principios y normas de nuestra 
+                organización para que sirvan de guía a la conducta de los distintos 
+                actores que conforman ER.
+
+                Asimismo, define nuestro compromiso ético de actuar, conforme a los 
+                principios y estándares de conducta que en él se definen, en el desarrollo
+                de nuestras relaciones con el conjunto de grupos de interés afectados 
+                por nuestra actividad: órganos de gobierno, equipo humano, asociados, 
+                proveedores, financiadores y otras plataformas en las que estamos presentes.
+
+                Este código ético es un pacto personal y voluntario donde se presentan
+                acciones orientadas a mejorar nuestro trabajo, ofrecer un mejor servicio
+                y contribuir a la sociedad, con armonía, convivencia y respeto.
+
+                Durante 2016 y 21017 hemos dedicado un gran esfuerzo a la elaboración 
+                del Código Ético. En dicho proceso han intervenido diferentes agentes
+                entre los que se encuentran todos los potenciales destinatarios de dicho 
+                Código. Pero todos los esfuerzos serán baldíos si los principios y 
+                acciones que allí se recogen no son desplegados en todos los niveles 
+                organizativos y asumidos en primera persona por todos los destinatarios
+                del Código Ético.
+            </div>
+
+
+            <div id="servicios">
+                <!-- Cards -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    
+                                    <div class="avatar mx-auto">
+                                        <img src="http://4.bp.blogspot.com/-RzZ0iiWKPP0/UCPHFLEjI-I/AAAAAAAACjk/P_JRnWUE1TU/s1600/Mr.Popo.png" class="rounded-circle img-fluid">
+                                    </div>
+                                    <div class="card-text">
+                                        <h1 class="display-4 lead">Hazte socio colaborador</h1>
+                                        <div class="jumbotron jumbotron-fluid">
+                                            <div class="container">
+El compromiso en el tiempo de personas como tú nos permite llegar a las personas con enfermedades 
+raras que actualmente se encuentran aisladas y desamparadas, sean quienes sean y estén donde estén. ¡Únete a ER!
+Escribe a solidaridad@enfermedades-raras.org para ponerte en contacto con nosotros si 
+deseas recibir más información o si tienes cualquier duda o consulta.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <a class="btn btn-primary btn-sm" rel="publisher"
+                                       href="https://plus.google.com/shahnuralam">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com/webmaniac">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a class="btn btn-primary btn-sm" rel="publisher"
+                                       href="https://plus.google.com/shahnuralam">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    
+                                    <div class="avatar mx-auto">
+                                        <img src="https://cdn.pixabay.com/photo/2018/01/28/13/24/portrait-3113651_960_720.jpg" class="rounded-circle img-fluid">
+                                    </div>
+                                    <div class="card-text">
+                                        <h1 class="display-4 lead">Haz un donativo</h1>
+                                        <div class="jumbotron jumbotron-fluid">
+                                            <div class="container">
+         Un donativo es mucho. Significa que cada persona aporta lo que puede o quiere a una acción social como la nuestra. 
+         Con tu donativo podrás colaborar en el proyecto que desees o contribuir a la realización de los proyectos que 
+         actualmente están en marcha.Llámenos para facilitarnos sus datos al 90 111 22 33 y le atenderemos personalmente.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <a class="btn btn-primary btn-sm" rel="publisher"
+                                       href="https://plus.google.com/shahnuralam">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com/webmaniac">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a class="btn btn-primary btn-sm" rel="publisher"
+                                       href="https://plus.google.com/shahnuralam">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    
+                                    <div class="avatar mx-auto">
+                                        <img src="https://cdn.pixabay.com/photo/2014/04/05/13/05/portrait-317041_960_720.jpg" class="rounded-circle img-fluid">
+                                    </div>
+                                    <div class="card-text"> 
+                                        <h1 class="display-4 lead">Hazte voluntario/a</h1>
+                                        <div class="jumbotron jumbotron-fluid">
+                                            <div class="container">
+Contribuye al cambio de la realidad que afecta a las personas con enfermedades raras y sus familias. 
+Comparte el valor de tu tiempo, tus conocimientos y tu experiencia para trabajar junto a 
+toda la organización para el cumplimiento de nuestra misión. ¿Necesitas más información? 
+Si tienes cualquier duda o necesitas información adicional, ¡escríbenos a er@enfermedades-raras.org!
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <a class="btn btn-primary btn-sm" rel="publisher"
+                                       href="https://plus.google.com/shahnuralam">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com/webmaniac">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a class="btn btn-primary btn-sm" rel="publisher"
+                                       href="https://plus.google.com/shahnuralam">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Otras actividades</h5>
+                                    <div class="avatar mx-auto">
+                                        <img src="https://cdn.pixabay.com/photo/2016/12/19/10/16/hand-1917895_960_720.png" class="rounded-circle img-fluid">
+                                    </div>
+                                    <div class="card-text">
+                                        <div class="jumbotron jumbotron-fluid">
+                                            <div class="container">
+                                                <ul class="fa">
+                                                    <li>Biblioteca</li>
+                                                    <li>Colaboradores</li>
+                                                    <li>Contacto</li>
+                                                    <li>Accesibilidad</li>
+                                                    <li>Mapa web</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <a class="btn btn-primary btn-sm" rel="publisher"
+                                       href="https://plus.google.com/shahnuralam">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com/webmaniac">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a class="btn btn-primary btn-sm" rel="publisher"
+                                       href="https://plus.google.com/shahnuralam">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel -->
+            <div id="ayudanos"></div>
+        </div>
+    </body>
+</html>
+

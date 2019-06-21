@@ -1,0 +1,6 @@
+TOMCAT
+
+-En la carpeta webapps ens donde guardamos los .war
+- en web.xml es donde mapeas los nombres y urls de las aplicaciones que vas a ejecutar
+- webapps/manager/meta-inf/context.xml   y comentar lo que hay dentro de context
+

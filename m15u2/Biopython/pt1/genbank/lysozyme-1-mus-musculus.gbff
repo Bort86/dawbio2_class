@@ -1,0 +1,194 @@
+LOCUS       NM_013590               1282 bp    mRNA    linear   ROD 11-NOV-2018
+DEFINITION  Mus musculus lysozyme 1 (Lyz1), mRNA.
+ACCESSION   NM_013590
+VERSION     NM_013590.4
+KEYWORDS    RefSeq.
+SOURCE      Mus musculus (house mouse)
+  ORGANISM  Mus musculus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Glires; Rodentia; Myomorpha;
+            Muroidea; Muridae; Murinae; Mus; Mus.
+REFERENCE   1  (bases 1 to 1282)
+  AUTHORS   Mori K, Nakamura H, Kurooka H, Miyachi H, Tamada K, Sugai M, Takumi
+            T and Yokota Y.
+  TITLE     Id2 determines intestinal identity through repression of the
+            foregut transcription factor, Irx5
+  JOURNAL   Mol. Cell. Biol. (2018) In press
+   PUBMED   29463648
+  REMARK    Publication Status: Available-Online prior to print
+REFERENCE   2  (bases 1 to 1282)
+  AUTHORS   Gonzalez-Meljem JM, Haston S, Carreno G, Apps JR, Pozzi S, Stache
+            C, Kaushal G, Virasami A, Panousopoulos L, Mousavy-Gharavy SN,
+            Guerrero A, Rashid M, Jani N, Goding CR, Jacques TS, Adams DJ, Gil
+            J, Andoniadou CL and Martinez-Barbera JP.
+  TITLE     Stem cell senescence drives age-attenuated induction of pituitary
+            tumours in mouse models of paediatric craniopharyngioma
+  JOURNAL   Nat Commun 8 (1), 1819 (2017)
+   PUBMED   29180744
+  REMARK    Publication Status: Online-Only
+REFERENCE   3  (bases 1 to 1282)
+  AUTHORS   Cotton JL, Li Q, Ma L, Park JS, Wang J, Ou J, Zhu LJ, Ip YT,
+            Johnson RL and Mao J.
+  TITLE     YAP/TAZ and Hedgehog Coordinate Growth and Patterning in
+            Gastrointestinal Mesenchyme
+  JOURNAL   Dev. Cell 43 (1), 35-47 (2017)
+   PUBMED   28943241
+REFERENCE   4  (bases 1 to 1282)
+  AUTHORS   Yanai H, Atsumi N, Tanaka T, Nakamura N, Komai Y, Omachi T, Tanaka
+            K, Ishigaki K, Saiga K, Ohsugi H, Tokuyama Y, Imahashi Y, Ohe S,
+            Hisha H, Yoshida N, Kumano K, Kon M and Ueno H.
+  TITLE     Intestinal stem cells contribute to the maturation of the neonatal
+            small intestine and colon independently of digestive activity
+  JOURNAL   Sci Rep 7 (1), 9891 (2017)
+   PUBMED   28860595
+  REMARK    Publication Status: Online-Only
+REFERENCE   5  (bases 1 to 1282)
+  AUTHORS   Farmer DT, Nathan S, Finley JK, Shengyang Yu K, Emmerson E, Byrnes
+            LE, Sneddon JB, McManus MT, Tward AD and Knox SM.
+  TITLE     Defining epithelial cell dynamics and lineage relationships in the
+            developing lacrimal gland
+  JOURNAL   Development 144 (13), 2517-2528 (2017)
+   PUBMED   28576768
+REFERENCE   6  (bases 1 to 1282)
+  AUTHORS   Metzger M, Conrad S, Alvarez-Bolado G, Skutella T and Just L.
+  TITLE     Gene expression of the repulsive guidance molecules during
+            development of the mouse intestine
+  JOURNAL   Dev. Dyn. 234 (1), 169-175 (2005)
+   PUBMED   16032658
+REFERENCE   7  (bases 1 to 1282)
+  AUTHORS   Markart P, Faust N, Graf T, Na CL, Weaver TE and Akinbi HT.
+  TITLE     Comparison of the microbicidal and muramidase activities of mouse
+            lysozyme M and P
+  JOURNAL   Biochem. J. 380 (Pt 2), 385-392 (2004)
+   PUBMED   14977423
+REFERENCE   8  (bases 1 to 1282)
+  AUTHORS   Cortopassi GA and Wilson AC.
+  TITLE     Recent origin of the P lysozyme gene in mice
+  JOURNAL   Nucleic Acids Res. 18 (7), 1911 (1990)
+   PUBMED   2336377
+REFERENCE   9  (bases 1 to 1282)
+  AUTHORS   Cross M and Renkawitz R.
+  TITLE     Repetitive sequence involvement in the duplication and divergence
+            of mouse lysozyme genes
+  JOURNAL   EMBO J. 9 (4), 1283-1288 (1990)
+   PUBMED   2323338
+REFERENCE   10 (bases 1 to 1282)
+  AUTHORS   Hammer,M.F. and Wilson,A.C.
+  TITLE     Regulatory and structural genes for lysozymes of mice
+  JOURNAL   Genetics 115 (3), 521-533 (1987)
+   PUBMED   3569879
+COMMENT     VALIDATED REFSEQ: This record has undergone validation or
+            preliminary review. The reference sequence was derived from
+            BC061129.1 and CD742179.1.
+            On Apr 11, 2009 this sequence version replaced NM_013590.3.
+            
+            Publication Note:  This RefSeq record includes a subset of the
+            publications that are available for this gene. Please see the Gene
+            record to access additional publications.
+            
+            ##Evidence-Data-START##
+            Transcript exon combination :: BC061129.1, BB610427.1 [ECO:0000332]
+            RNAseq introns              :: single sample supports all introns
+                                           SAMN00849377, SAMN00849378
+                                           [ECO:0000348]
+            ##Evidence-Data-END##
+PRIMARY     REFSEQ_SPAN         PRIMARY_IDENTIFIER PRIMARY_SPAN        COMP
+            1-1263              BC061129.1         1-1263
+            1264-1282           CD742179.1         1-19                c
+FEATURES             Location/Qualifiers
+     source          1..1282
+                     /organism="Mus musculus"
+                     /mol_type="mRNA"
+                     /strain="C57BL/6"
+                     /db_xref="taxon:10090"
+                     /chromosome="10"
+                     /map="10"
+     gene            1..1282
+                     /gene="Lyz1"
+                     /gene_synonym="Lyz; Lyzf3; Lzp-s"
+                     /note="lysozyme 1"
+                     /db_xref="GeneID:17110"
+                     /db_xref="MGI:MGI:96902"
+     exon            1..166
+                     /gene="Lyz1"
+                     /gene_synonym="Lyz; Lyzf3; Lzp-s"
+                     /inference="alignment:Splign:2.0.8"
+     CDS             31..477
+                     /gene="Lyz1"
+                     /gene_synonym="Lyz; Lyzf3; Lzp-s"
+                     /EC_number="3.2.1.17"
+                     /note="lysozyme C-1; lysozyme C type P;
+                     1,4-beta-N-acetylmuramidase C; P lysozyme structural;
+                     renal amyloidosis; lysozyme f3"
+                     /codon_start=1
+                     /product="lysozyme C-1 precursor"
+                     /protein_id="NP_038618.1"
+                     /db_xref="CCDS:CCDS48695.1"
+                     /db_xref="GeneID:17110"
+                     /db_xref="MGI:MGI:96902"
+                     /translation="MKALLTLGLLLLSVTAQAKVYNRCELARILKRNGMDGYRGVKLA
+                     DWVCLAQHESNYNTRATNYNRGDRSTDYGIFQINSRYWCNDGKTPRSKNACGINCSAL
+                     LQDDITAAIQCAKRVVRDPQGIRAWVAWRTQCQNRDLSQYIRNCGV"
+     sig_peptide     31..84
+                     /gene="Lyz1"
+                     /gene_synonym="Lyz; Lyzf3; Lzp-s"
+                     /inference="COORDINATES: ab initio prediction:SignalP:4.0"
+     mat_peptide     85..474
+                     /gene="Lyz1"
+                     /gene_synonym="Lyz; Lyzf3; Lzp-s"
+                     /product="Lysozyme C-1"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="propagated from UniProtKB/Swiss-Prot (P17897.1)"
+     exon            167..331
+                     /gene="Lyz1"
+                     /gene_synonym="Lyz; Lyzf3; Lzp-s"
+                     /inference="alignment:Splign:2.0.8"
+     STS             227..440
+                     /gene="Lyz1"
+                     /gene_synonym="Lyz; Lyzf3; Lzp-s"
+                     /standard_name="Lyz1"
+                     /db_xref="UniSTS:526863"
+     exon            332..410
+                     /gene="Lyz1"
+                     /gene_synonym="Lyz; Lyzf3; Lzp-s"
+                     /inference="alignment:Splign:2.0.8"
+     exon            411..1265
+                     /gene="Lyz1"
+                     /gene_synonym="Lyz; Lyzf3; Lzp-s"
+                     /inference="alignment:Splign:2.0.8"
+     STS             884..1096
+                     /gene="Lyz1"
+                     /gene_synonym="Lyz; Lyzf3; Lzp-s"
+                     /standard_name="RH127838"
+                     /db_xref="UniSTS:211148"
+     STS             1011..1128
+                     /gene="Lyz1"
+                     /gene_synonym="Lyz; Lyzf3; Lzp-s"
+                     /standard_name="AI326280"
+                     /db_xref="UniSTS:180122"
+ORIGIN      
+        1 agccagcagc tgacccagcc tccagtcacc atgaaggctc tcctgactct gggactcctc
+       61 ctgctttctg tcactgccca ggccaaggtc tacaatcgtt gtgagttggc cagaattctg
+      121 aaaaggaatg gaatggatgg ctaccgtggt gtcaagctgg ctgactgggt gtgtttagct
+      181 cagcatgaga gcaattataa cacacgagct acaaactaca accgtggaga ccgaagcacc
+      241 gactatggga tatttcagat caatagccga tactggtgta atgatggcaa aaccccaaga
+      301 tctaagaatg cctgtgggat caattgcagt gctctgctgc aggatgacat cactgcagcc
+      361 atacaatgtg caaagagggt ggtgagagat ccccaaggca ttcgagcatg ggtggcatgg
+      421 cgaacacaat gtcaaaaccg agatctgtcc cagtatattc ggaactgcgg agtctgaccg
+      481 cggtgtgctt ctactgcagc ccattctgtc tctttctcac tgtaggagta gatatgagag
+      541 aggtcacact tcctcgcttt cccctccaag taacaggact tcagcagaaa cagggcaaaa
+      601 cagacacttc ctcctcacaa gcttcagctg atgctgtgtt gtgcaaagtc tcccttgtca
+      661 gtcagcaaag ccatggatgc tggtgacagt cagccaacac agtgattgcc acacagacat
+      721 ctctgtaggt cagttcttca gccaggaagt gattcacatt gacttccatt ggaattcatc
+      781 ttaatcagac ctgtgtgaat aaaaatacaa gaactgttta taggagacca gttgatcttg
+      841 ggaaaacagc agttgtgtga gctgcagggc tttgtgcagt cccagcaccc agttagaaca
+      901 gcctctgtgg tgggccggga gggtttctga gggcacagga atctcagtgg atgagaactg
+      961 agattgtctg aactcagaaa cttatcaggg aacctgtgac ctgtctttct tagagctgcc
+     1021 cctttcatct tgcttaaaaa ataaattctc agctcatgtg tcagtctgtt taacccttga
+     1081 gaggatgttc ccagtgtcat gaggcattca ggaggactag tgagctgtgc ctgtcctgat
+     1141 ctttcttaag ttccttcatt catactaact ctgagacaga agagcttgta ccagccaata
+     1201 accacaggag caaatctaat ctcacagtga aaaagtacaa atggcattaa atgattttca
+     1261 atgcaaaaaa aaaaaaaaaa aa
+//
+

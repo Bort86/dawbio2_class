@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Friend">
+  <ClassDiagramComponents>
+    <Class name="Friend" package="model" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="friendID" type="int" visibility="private"/>
+        <Field name="categoryId" type="String" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="phone" type="String" visibility="private"/>
+        <Field name="age" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="friendID"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="phone"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="phone"/>
+          <Argument type="String" name="name"/>
+          <Argument type="int" name="age"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getFriendID" returnType="int" visibility="public"/>
+        <Method name="setFriendID" returnType="void" visibility="public">
+          <Argument type="int" name="friendID"/>
+        </Method>
+        <Method name="getPhone" returnType="String" visibility="public"/>
+        <Method name="setPhone" returnType="void" visibility="public">
+          <Argument type="String" name="phone"/>
+        </Method>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getAge" returnType="int" visibility="public"/>
+        <Method name="setAge" returnType="void" visibility="public">
+          <Argument type="int" name="age"/>
+        </Method>
+        <Method name="getCategoryId" returnType="String" visibility="public"/>
+        <Method name="setCategoryId" returnType="void" visibility="public">
+          <Argument type="String" name="categoryId"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

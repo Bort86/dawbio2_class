@@ -1,0 +1,124 @@
+
+#background{
+    background-image: url("../images/Fondo.png");
+    width: 994px;
+    height: 546px;
+    background-repeat: no-repeat;
+}
+
+@keyframes afternoon-animation{
+    0%{
+
+    }
+    100%{
+
+    }
+}
+
+#sun{
+    background-image: url("../images/Sol.png");
+    width: 500px;
+    height: 500px;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 0px;
+    top: 180px;
+
+    animation-name: sun-animation;
+    animation-duration: 20s;
+    animation-delay:0s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+}
+
+@keyframes sun-animation{
+    0%{
+        left: 0px;
+        top: 180px;
+    }
+
+    50%{
+        top:50px;
+    }
+
+    100%{
+        left: 880px;
+        top: 180px;
+
+    }
+}
+
+#cloud{
+    background-image: url("../images/Nube.png");
+    width: 170px;
+    height: 500px;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 400px;
+    left: 0px;
+
+    animation-name: cloud-animation;
+    animation-duration: 20s;
+    animation-delay:0s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+}
+
+@keyframes cloud-animation{
+    0%{
+
+    }
+    25%{
+        left:440px;
+    }
+
+    75%{
+      left:440px;
+    }
+
+    100%{
+        left: 880px;
+
+    }
+}
+
+#rain{
+    background-image: url("../images/LLuvia.png");
+    width: 170px;
+    height: 150px;
+    bottom: 200px;
+    left: 440px;
+    background-repeat: no-repeat;
+    animation-name: rain-animation;
+    animation-duration: 20s;
+    animation-delay:0s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+}
+@keyframes rain-animation {
+
+
+}
+
+#pot{
+    background-image: url("../images/Maceta.png");
+    width: 500px;
+    height: 500px;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 440px;
+    bottom: 595px;
+}
+#flower{
+    background-image: url("../images/Flor.png");
+    width: 500px;
+    height: 500px;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 15px;
+    left: 10px;
+    background: transparent;
+}

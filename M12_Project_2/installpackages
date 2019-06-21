@@ -1,0 +1,19 @@
+chmod 777 /usr/local/lib/R
+chmod 777 /usr/lib/R/
+sudo chmod 777 /srv/shiny-server/NOMBRE_DE_LA_CARPETA
+
+sudo apt install libssl-dev
+sudo apt install libxml2-dev
+install.packages('openssl')
+BiocManager::install('GEOquery')
+install.packages("tidyverse")
+BiocManager::install("limma")
+BiocManager::install("annotate")
+install.packages("shinycustomloader")
+install.packages("shinyjs")
+install.packages("shinydashboard")
+
+test like this:
+
+$ sudo su - \
+-c "R -e \"install.packages('shiny', repos='https://cran.rstudio.com/')\""

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Test">
+  <ClassDiagramComponents>
+    <Class name="Profesor" package="" visibility="public" xPosition="452.0" yPosition="128.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="impartirClase" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ProfesorTitular" package="" visibility="public" xPosition="294.0" yPosition="368.0">
+      <Fields>
+        <Field name="anyOposition" type="Date" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="ProfesorSuplente" package="" visibility="public" xPosition="610.0" yPosition="368.0">
+      <Fields>
+        <Field name="inicioSuplencia" type="Date" visibility="private"/>
+        <Field name="finSuplencia" type="Date" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="ProfesorSuplente" target="Profesor"/>
+    <IsRelation name="is" source="ProfesorTitular" target="Profesor"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

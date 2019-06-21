@@ -1,0 +1,34 @@
+- nanog
+- sequence: chr12:7,941,992-7,948,657
+- hide all
+- Genes and Gene Predictions / NCBI RefSeq / dense
+- clickamos en el entrón que queremos
+- vamos a genomic sequence
+- con el tool blat podemos 
+- zoom out: vemos las secuencias genéticas que hay alrededor de la seleccionada (si es que hay)
+- botón configure (text size = 18; deshabilitar la segunda opción)
+
+Genes: elemento mejor conservado de la evolución
+
+* Homología
+- ortólogos: homólogos entre especies
+- parálogos: homólogos en la misma especie (tienen un gen antecesor en común)
+
+En la gráfica de conservación podemos ver el grado de conservación de la cadena en distintas especies (la lave de los dientes)
+
+* Ensamblajes
+Tools / Lif over: para comparar la misma secuencia entre distintas versiones del genoma (2013 o 2009, por ejemplo)
+. / View conversions
+. Añadir pista propia: ver ayuda formato .bed
+
+* ENCODE
+Proyecto para intentar descubrir la función del 97% restante del gen, no todo es expresión de proteína en los genes
+. Metilaciones: experimentos que "marcan" genes para que no se expresen o lo hagan, para ver las consecuencias
+. Genome Browser / Regulation:
+. RNA-seq: muestreo de niveles de expresión de genes (los microarray son iguales pero buscan uno en particular, los RNAseq lo hacen de todo lo que se encuentra)
+
+- formatos:
+bed
+gff
+beograf
+wig

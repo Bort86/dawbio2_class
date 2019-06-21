@@ -1,0 +1,59 @@
+*Parámetros de centralización:
+- media   > mean()
+- mediana  > median() : una vez ordenados un conjunto de datos, la mediana los separa en dos grupos, 50% a la izquierda, 50% a la derecha (se considera como el segundo cuartil)
+- moda  > 
+
+*Parámetros de dispersión:
+- IQR : rango intercuartílico - diferencia entre el primer y el tercer cuartil (3rQ - 1rQ)
+- rango > range() : diferencia entre máximo y mínimo
+- varianza: (suma de (Xi - media)al cuadrado)/ n (n = cantidad de datos)  >>>>> R no hace varianza sino la cuasivarianza
+- desviación típica: raíz cuadrada de la varianza :::: R tmb lo calcula con n-1
+
+*Parámetros de posición:
+- Cuartiles : 1º Cuartil te deja el 25% a la izquierda, el 75% a la derecha (una vez ordenados)
+- Deciles
+- Percentiles
+- Outliers (atípicos) : < o > 1.5 IQR
+
+*Estructura de datos en R
+data.frame
+vector
+
+*Gráficas
+- 10⁰>10³
+- boxplot(estructura_de_datos) >>> cajas y bigotes
+- R está orientado a construir gráficas, de todo tipo, desde sencillos hasta de más calidad
+- Permite exportar (pdf, jpeg, gif)
+- librerías (ggplot)
+- 2 sistemas
+	- Tradicional
+	- Gráficos Tellis (paquete Lattice)
+- Funciones que ejecutan gráficos
+	- Funciones de alto nivel, con # opciones
+	- Funciones de bajo nivel, permiten un control más fino de las gráficas
+	- Funciones de uso interactivo: extraer información o modificación del gráfico con el sistema de IO (ratón, teclado, etc)
+- Funciones de alto nivel:
+  . Plot()   Opciones  main > define el título
+			sub > define el subtítulo
+			type > tipo de gráfico (línea, puntos)
+			xlab, ylab > Etiqueta de los ejes
+			xlim, ylim > Definen los rangos del eje de x y de y
+			lty > define el tipo de línea
+			ltw > define el grosor de la línea
+			col > color del gráfico
+  . par(mfrow=c(2,2)) = sirve para preparar un marco donde podremos generar 4 gráficos distintos
+
+para guardar el gráfico en fichero >>>>>>
+1. generamos el fichero:
+png(filename = "nombre_de_mi_gráfico.png")
+2. se plotea
+plot(A, type="b")
+3. cerramos la ventana
+dev.off()
+
+- Funciones de bajo nivel :
+  . points(x,y,...) Dibuja una nube de puntos
+  . lines(x,y,...) Dibuja una línea entre los puntos
+  . ablines() Dibuja una línea recta
+  . polygon()
+  . text() Escribe texto en las coordenadas especificadas

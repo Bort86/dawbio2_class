@@ -1,0 +1,4 @@
+Al crearnos un entorno de trabajo con conda podemos instalar todo lo que hay en el repositorio de conda
+
+conda create --name bio
+conda install --name bio -c anaconda [biopython, ipython, el programa que quieras]

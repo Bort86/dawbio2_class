@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-package class diagram">
+  <ClassDiagramComponents>
+    <Class name="categoryController" package="controllers" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="catAdo" type="CategoryDAO1" visibility="private"/>
+        <Field name="ruta" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="doAction" returnType="HttpServletResponse" visibility="protected">
+          <Argument type="HttpServletRequest" name="request"/>
+          <Argument type="HttpServletResponse" name="response"/>
+        </Method>
+        <Method name="listAll" returnType="HttpServletResponse" visibility="private">
+          <Argument type="HttpServletRequest" name="request"/>
+          <Argument type="HttpServletResponse" name="response"/>
+        </Method>
+        <Method name="insertForm" returnType="HttpServletResponse" visibility="private">
+          <Argument type="HttpServletRequest" name="request"/>
+          <Argument type="HttpServletResponse" name="response"/>
+        </Method>
+        <Method name="addCategory" returnType="HttpServletResponse" visibility="private">
+          <Argument type="HttpServletRequest" name="request"/>
+          <Argument type="HttpServletResponse" name="response"/>
+        </Method>
+        <Method name="modifyCategoriesForm" returnType="HttpServletResponse" visibility="private">
+          <Argument type="HttpServletRequest" name="request"/>
+          <Argument type="HttpServletResponse" name="response"/>
+        </Method>
+        <Method name="modifyCategory" returnType="HttpServletResponse" visibility="private">
+          <Argument type="HttpServletRequest" name="request"/>
+          <Argument type="HttpServletResponse" name="response"/>
+        </Method>
+        <Method name="modifyThatCategory" returnType="HttpServletResponse" visibility="private">
+          <Argument type="HttpServletRequest" name="request"/>
+          <Argument type="HttpServletResponse" name="response"/>
+        </Method>
+        <Method name="deleteCategoryForm" returnType="HttpServletResponse" visibility="private">
+          <Argument type="HttpServletRequest" name="request"/>
+          <Argument type="HttpServletResponse" name="response"/>
+        </Method>
+        <Method name="deleteCategory" returnType="HttpServletResponse" visibility="private">
+          <Argument type="HttpServletRequest" name="request"/>
+          <Argument type="HttpServletResponse" name="response"/>
+        </Method>
+        <Method name="doGet" returnType="HttpServletResponse" visibility="protected">
+          <Argument type="HttpServletRequest" name="request"/>
+          <Argument type="HttpServletResponse" name="response"/>
+        </Method>
+        <Method name="doPost" returnType="HttpServletResponse" visibility="protected">
+          <Argument type="HttpServletRequest" name="request"/>
+          <Argument type="HttpServletResponse" name="response"/>
+        </Method>
+        <Method name="getServletInfo" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="friendController" package="controllers" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="friendAdo" type="FriendDAO1" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="doAction" returnType="HttpServletResponse" visibility="protected">
+          <Argument type="HttpServletRequest" name="request"/>
+          <Argument type="HttpServletResponse" name="response"/>
+        </Method>
+        <Method name="doGet" returnType="HttpServletResponse" visibility="protected">
+          <Argument type="HttpServletRequest" name="request"/>
+          <Argument type="HttpServletResponse" name="response"/>
+        </Method>
+        <Method name="doPost" returnType="HttpServletResponse" visibility="protected">
+          <Argument type="HttpServletRequest" name="request"/>
+          <Argument type="HttpServletResponse" name="response"/>
+        </Method>
+        <Method name="getServletInfo" returnType="String" visibility="public"/>
+        <Method name="listAll" returnType="HttpServletResponse" visibility="private">
+          <Argument type="HttpServletRequest" name="request"/>
+          <Argument type="HttpServletResponse" name="response"/>
+        </Method>
+        <Method name="insertFriend" returnType="HttpServletResponse" visibility="private">
+          <Argument type="HttpServletRequest" name="request"/>
+          <Argument type="HttpServletResponse" name="response"/>
+        </Method>
+        <Method name="deleteFriend" returnType="HttpServletResponse" visibility="private">
+          <Argument type="HttpServletRequest" name="request"/>
+          <Argument type="HttpServletResponse" name="response"/>
+        </Method>
+        <Method name="modifyFriendForm" returnType="HttpServletResponse" visibility="private">
+          <Argument type="HttpServletRequest" name="request"/>
+          <Argument type="HttpServletResponse" name="response"/>
+        </Method>
+        <Method name="modify" returnType="HttpServletResponse" visibility="private">
+          <Argument type="HttpServletRequest" name="request"/>
+          <Argument type="HttpServletResponse" name="response"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Friend" package="model" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="friendID" type="int" visibility="private"/>
+        <Field name="categoryId" type="String" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="phone" type="String" visibility="private"/>
+        <Field name="age" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="friendID"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="phone"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="phone"/>
+          <Argument type="String" name="name"/>
+          <Argument type="int" name="age"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getFriendID" returnType="int" visibility="public"/>
+        <Method name="setFriendID" returnType="int" visibility="public">
+          <Argument type="int" name="friendID"/>
+        </Method>
+        <Method name="getPhone" returnType="String" visibility="public"/>
+        <Method name="setPhone" returnType="String" visibility="public">
+          <Argument type="String" name="phone"/>
+        </Method>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="String" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getAge" returnType="int" visibility="public"/>
+        <Method name="setAge" returnType="int" visibility="public">
+          <Argument type="int" name="age"/>
+        </Method>
+        <Method name="getCategoryId" returnType="String" visibility="public"/>
+        <Method name="setCategoryId" returnType="String" visibility="public">
+          <Argument type="String" name="categoryId"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="FriendDAO" package="model.persist" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="queries" type="Properties" visibility="private" isFinal="true"/>
+        <Field name="PROPS_FILE" type="String" visibility="private" isStatic="true"/>
+        <Field name="dataSource" type="DBConnect1" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="ruta"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getQuery" returnType="String" visibility="public">
+          <Argument type="String" name="queryName"/>
+        </Method>
+        <Method name="getDataSource" returnType="DBConnect1" visibility="public" isStatic="true"/>
+        <Method name="insert" returnType="Friend" visibility="public">
+          <Argument type="Friend" name="friend"/>
+        </Method>
+        <Method name="update" returnType="Friend" visibility="public">
+          <Argument type="Friend" name="friend"/>
+        </Method>
+        <Method name="remove" returnType="Friend" visibility="public">
+          <Argument type="Friend" name="friend"/>
+        </Method>
+        <Method name="findAll" returnType="Collection&lt;Friend&gt;" visibility="public"/>
+        <Method name="findOne" returnType="Friend" visibility="public">
+          <Argument type="Friend" name="friend"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="DBConnect" package="model.persist" visibility="public" isFinal="true" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="DRIVER" type="String" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="BD_URL" type="String" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="USUARI" type="String" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="PASSWORD" type="String" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="instance" type="DBConnect1" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="private"/>
+      </Constructors>
+      <Methods>
+        <Method name="getInstance" returnType="DBConnect1" visibility="public" isStatic="true"/>
+        <Method name="getConnection" returnType="Connection" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="CategoryDAO" package="model.persist" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields>
+        <Field name="dataSource" type="DBConnect1" visibility="private" isStatic="true"/>
+        <Field name="queries" type="Properties" visibility="private" isFinal="true"/>
+        <Field name="PROPS_FILE" type="String" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="ruta"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getQuery" returnType="String" visibility="public">
+          <Argument type="String" name="queryName"/>
+        </Method>
+        <Method name="findAll" returnType="ArrayList&lt;Category&gt;" visibility="public"/>
+        <Method name="insert" returnType="Category" visibility="public">
+          <Argument type="Category" name="cat"/>
+        </Method>
+        <Method name="modify" returnType="Category" visibility="public">
+          <Argument type="Category" name="cat"/>
+        </Method>
+        <Method name="delete" returnType="Category" visibility="public">
+          <Argument type="Category" name="cat"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Category" package="model" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="description" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="id"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="description"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="int" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+        <Method name="setDescription" returnType="String" visibility="public">
+          <Argument type="String" name="description"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="FriendDAO1" package="model.persist" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields>
+        <Field name="queries" type="Properties" visibility="private" isFinal="true"/>
+        <Field name="PROPS_FILE" type="String" visibility="private" isStatic="true"/>
+        <Field name="dataSource" type="DBConnect1" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="ruta"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getQuery" returnType="String" visibility="public">
+          <Argument type="String" name="queryName"/>
+        </Method>
+        <Method name="getDataSource" returnType="DBConnect1" visibility="public" isStatic="true"/>
+        <Method name="insert" returnType="Friend" visibility="public">
+          <Argument type="Friend" name="friend"/>
+        </Method>
+        <Method name="update" returnType="Friend" visibility="public">
+          <Argument type="Friend" name="friend"/>
+        </Method>
+        <Method name="remove" returnType="Friend" visibility="public">
+          <Argument type="Friend" name="friend"/>
+        </Method>
+        <Method name="findAll" returnType="Collection&lt;Friend&gt;" visibility="public"/>
+        <Method name="findOne" returnType="Friend" visibility="public">
+          <Argument type="Friend" name="friend"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="DBConnect1" package="model.persist" visibility="public" isFinal="true" xPosition="20.0" yPosition="420.0">
+      <Fields>
+        <Field name="DRIVER" type="String" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="BD_URL" type="String" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="USUARI" type="String" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="PASSWORD" type="String" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="instance" type="DBConnect1" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="private"/>
+      </Constructors>
+      <Methods>
+        <Method name="getInstance" returnType="DBConnect1" visibility="public" isStatic="true"/>
+        <Method name="getConnection" returnType="Connection" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="CategoryDAO1" package="model.persist" visibility="public" xPosition="320.0" yPosition="420.0">
+      <Fields>
+        <Field name="dataSource" type="DBConnect" visibility="private" isStatic="true"/>
+        <Field name="queries" type="Properties" visibility="private" isFinal="true"/>
+        <Field name="PROPS_FILE" type="String" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="ruta"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getQuery" returnType="String" visibility="public">
+          <Argument type="String" name="queryName"/>
+        </Method>
+        <Method name="findAll" returnType="ArrayList&lt;Category&gt;" visibility="public"/>
+        <Method name="insert" returnType="Category" visibility="public">
+          <Argument type="Category" name="cat"/>
+        </Method>
+        <Method name="modify" returnType="Category" visibility="public">
+          <Argument type="Category" name="cat"/>
+        </Method>
+        <Method name="delete" returnType="Category" visibility="public">
+          <Argument type="Category" name="cat"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="model.persist.DBConnect" target="model.persist.DBConnect" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="model.persist.FriendDAO" target="model.persist.DBConnect" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="model.persist.CategoryDAO" target="model.Category" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="dataSource" source="model.persist.FriendDAO" target="model.persist.DBConnect" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="instance" source="model.persist.DBConnect" target="model.persist.DBConnect" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="catAdo" source="controllers.categoryController" target="model.persist.CategoryDAO" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="friendAdo" source="controllers.friendController" target="model.persist.FriendDAO" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="dataSource" source="model.persist.CategoryDAO" target="model.persist.DBConnect" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="model.persist.FriendDAO" target="model.Friend" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

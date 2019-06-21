@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Bootstrap Práctica 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" >
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js" ></script>
+        <style>
+            .fondo{background:blue;}
+            .borde{border: 1px #000 solid;text-align:center; height:50px;}
+            .color1{background: #eeeeee; height:50px}
+            .color2{background: #fcc314;}
+            .color3{background: #94ac3c;}
+            .color4{background: #295ba7;}
+            .slider{
+                background: url("images/back.png");
+                height: 100vh;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-origin: content-box;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid ">
+            <nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-sm">
+
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/boot-icon.png" width="40" height="40" class="d-inline-block align-top" alt="Logo chat">
+                    Bootstrap
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" 
+                        data-target="#algo" aria-controls="algo" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="algo">
+                    <ul class="navbar-nav justify-content-end d-flex flex-fill">
+                        <li class="nav-item">
+                            <a class="nav-item  nav-link active" href="#">Home</a> 
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="#">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <section class="container-fluid slider d-flex flex-column justify-content-center align-items-center">
+                <h2 class="text-white text-center d-none d-sm-block">Lorem ipsum dolor sit amet</h2>
+                <h1 class="text-white text-center">Lorem ipsum dolor</h1>
+                <h3 class="text-white text-center d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipisicing</h3>
+                <form class="form form-group text-center" action="action">
+                    <p><input type="text"  value="Lorem ipsum dolor"></p>
+                    <p><button class="btn btn-danger">Enviar</button></p>
+                </form>
+            </section>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,123 @@
+1.
+
+a. php artisan make:migration create_movies_table
+
+b. - Ruta: <ruta_del_proyecto>/database/migrations/2019_04_25_170129_create_movies_table.php
+
+c. public function up()
+    {
+        Schema::create('movies', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('title', 50);
+            $table->integer('year');
+            $table->text('synopsis')->nullable;
+            $table->boolean('rented')->default(FALSE);
+        });
+    }
+
+d. php artisan migrate:refresh --seed
+
+2. 
+
+a. php artisan make:model Movie
+
+b. Ruta: <ruta_del_proyecto>/app/Movie.php
+
+c. class Movie extends Model
+{
+    protected $fillable = [
+        'title', 'year', 'synopsis', 'rented'
+        ];
+    
+}
+
+3. 
+
+a. php artisan make:controller CatalogController
+
+b. <ruta_del_proyecto>/app/Http/Controllers/CatalogController.php
+
+c. public function edit() {
+        return view('form');
+    }
+
+    public function update(Request $request) {
+        $this->check($request);
+        try {
+            $objMovie = Movie::findOrFail($request->id);
+            $objMovie->update($request->title, $request->year, $request->synopsis);
+            $message = "Data updated ok";
+            return view('form', ['message' => $message]);
+        } catch (\Exception $ex) {
+            $message = "No data found " . $ex->getMessage();
+        }
+        return view('form', ['message' => $message]);
+    }
+
+    public function show() {
+        $arrMovie = Movie::all();
+
+        return view('movie.list', array('arrMovie' => $arrMovie));
+    }
+
+4.
+
+a. public function check(Request $request) {
+        $alphabetic = "/^[a-z ]*$/i";
+
+        $request->validate([
+            'title' => "required|max:50|regex:$alphabetic",
+            'year' => "required|digits:4|integer",
+            'synopsis' => "nullable|max:100",
+        ]);
+    }
+
+b. if($request->validate()->fails()){
+            $errors = $request->validate()->errors();
+            return view('form', array('message'=>$errors));
+        }
+
+5.
+
+a. <ruta_del_proyecto>/routes/web.php
+
+b. Route::get('/catalog/edit', 'CatalogController@edit')->name('movedit');
+Route::post('/catalog/update', 'CatalogController@update')->name('movupdate');
+Route::get('/catalog/show', 'CatalogController@show');
+
+6.
+
+a.
+@extends('main')
+
+@section('page')
+<!--OJO!!!! en el examen la vista edit solo muestra el form, no pide traer datos de un objeto movie seleccionado -->
+<!--El punto 6 sin embargo pide datos actuales y anteriores, por lo que asumo que se le pasa un objeto -->
+<!--Por eso me invento el $objMovie-->
+<form method="POST" action="{{ url('/movie/update') }}">
+    {{-- crear dos campos ocultos para prevenir el ataque CSRF --}}
+    {{-- https://es.wikipedia.org/wiki/Cross-site_request_forgery --}}
+    {{ method_field('POST') }}
+    {{ csrf_field() }}
+    <label for="name">Title *:</label>
+    <input  type="text" id="title" name="title" value="{{ old('title') ?? $objMovie->name }}" />
+    <label for="description">Year:</label>
+    <input  type="text" name="year" value="{{ old('year') ?? $objMovie->year }}" />
+    <label>Sinopsis *:</label>
+    <textarea id="synipsis" name="synipsis">{{ old('synipsis') ?? $objMovie->synipsis }}</textarea>
+    
+    <button type="submit">update</button>
+    <input type="hidden" id="id" name="id" value="{{ $objProduct->id ?? old('id') }}">
+    
+
+</form>
+
+@stop
+
+b. <ruta_del_proyecto>/resources/views/movie/form.php
+
+
+
+
+
+	

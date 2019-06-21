@@ -1,0 +1,4 @@
+1. Buscamos mysql connector en google
+2. Download JDBC Driver for MySQL (Connector/J)
+3. Para importarlo vamos a /libraries, clickamos importar y vamos a /usr/share/java/mysql---.jar
+

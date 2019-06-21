@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://wsf.cdyne.com/SpellChecker/check.asmx?wsdl" uri="xml-resources/web-service-references/check/wsdl/wsf.cdyne.com/SpellChecker/check.asmx.wsdl"/>
+    <system systemId="http://localhost:8081/Wsprova/NewWebService?wsdl" uri="xml-resources/web-service-references/NewWebService/wsdl/localhost_8081/Wsprova/NewWebService.wsdl"/>
+    <system systemId="http://localhost:8081/Wsprova/NewWebService?xsd=1" uri="xml-resources/web-service-references/NewWebService/wsdl/localhost_8081/Wsprova/NewWebService.xsd_1.xsd"/>
+</catalog>

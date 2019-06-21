@@ -1,0 +1,72 @@
+<div>
+  <div>
+    <table class="table table-bordered">
+      <tr>
+        <td>Filter by price:</td>
+        <td><input type="range" min="0" max="100"
+          [(ngModel)] = "priceFilter" name="priceFilter"
+          (change)="filter()"/>
+            {{priceFilter}}</td>
+      </tr>
+      <tr>
+        <td>Filter by colour:</td>
+        <td>
+          <select  name="colourFiltered" [(ngModel)]="colourFiltered"  (change)="filter()">
+            <option *ngFor="let colourFiltered of colours; let i = index"
+              [ngValue]="colourFiltered">
+              {{colourFiltered}}
+            </option>
+            <option selected>All</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Items per page: </td>
+        <td>
+          <input type="number"
+        [(ngModel)] = "itemsPerPage" name="itemsPerPage" appItemValidator required>
+        </td>
+      </tr>
+      <tr class="has-error alert alert-danger" *ngIf="itemsPerPage.touched && itemsPerPage.invalid">
+          <span *ngIf="itemsPerPage.errors.IsNotNumber">Is not a number</span>
+          <span *ngIf="itemsPerPage.errors.OutofRange && !patientAge.errors.IsNotNumber">Item per page cannot be negative</span>
+        </tr>
+      <tr>
+        <td>Number of articles:</td>
+        <td>{{clothFiltered.length}}</td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <h2>No articles found</h2>
+  </div>
+  <div>
+    <form #clothesManagement="ngForm" >
+      <h2>Articles found:</h2>
+      <table class="table table-bordered">
+        <tr><td><b>Article type</b></td>
+            <td><b>Colour</b></td>
+            <td><b>Expedition date</b></td>
+            <td><b>Price</b></td>
+            <td><b>Eliminate</b></td>
+            <td><b>Go to detail</b></td>
+        </tr>
+        <tr *ngFor="let cloth of clothFiltered | paginate: {itemsPerPage: itemsPerPage, currentPage : currentPage}; let i = index;" >
+              <td> {{cloth.getClothesType().getType()}} </td>
+              <td> {{cloth.getColour()}}</td>
+              <td> {{cloth.getExpeditionDate()}}</td>
+              <td> {{cloth.getPrice()}}</td>
+              <td>
+                <button class="btn btn-danger">Delete</button>
+              </td>
+              <td>
+                <button class="btn btn-primary">Go to detail</button>
+              </td>
+            </tr>
+    </table>
+    <pagination-controls  (pageChange)="currentPage=$event" max-size="5" directionLinks = "true" autoHide="true"></pagination-controls>
+
+
+</form>
+</div>
+</div>

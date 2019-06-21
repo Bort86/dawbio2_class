@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" >
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js" ></script>
+        <!-- https://www.w3schools.com/cssref/css_units.asp-->
+        <style>
+            .fondo{background:blue;}
+            .borde{border: 1px #000 solid;text-align:center; height:50px;}
+            .color1{background: #eeeeee; height:50px}
+            .color2{background: #fcc314;}
+            .color3{background: #94ac3c;}
+            .color4{background: #295ba7;}
+            .slider{
+                background: url("images/bg.jpg");
+
+                height: 100vh;
+                background-size: cover;
+                background-position: center;
+            }
+        </style>
+        <title>Hello, world!</title>
+    </head>
+    <body>
+        <!-- Dia 1-->
+
+        <!--COMENCEM:  https://getbootstrap.com/docs/4.1/layout/overview/ -->
+        <!-- <div class="container-fluid fondo">
+            <p> texto de ejemplo fluid</p>
+        </div>
+        <div class="container fondo">
+                <p> texto de ejemplo</p>
+        </div>-->
+        <!-- CONTAINER I GRID: https://getbootstrap.com/docs/4.1/layout/grid/ -->
+        <!--<div class="container">
+          <div class="row">
+              <div class="col borde">1</div>
+              <div class="col borde">2</div>
+              <div class="col borde">3</div>
+              <div class="col borde">4</div>
+              <div class="col borde">5</div>
+              <div class="col borde">6</div>
+              <div class="col borde">7</div>
+              <div class="col borde">8</div>
+              <div class="col borde">9</div>
+              <div class="col borde">10</div>
+              <div class="col borde">11</div>
+              <div class="col borde">12</div>
+           </div>
+          <div class="row">
+            <div class="col borde">2</div>
+            <div class="col borde">2</div>
+            <div class="col borde">2</div>
+            <div class="col borde">2</div>
+            <div class="col borde">2</div>
+            <div class="col borde">2</div>
+          </div>
+          <div class="row">
+            <div class="col borde">3</div>
+            <div class="col borde">3</div>
+            <div class="col borde">3</div>
+            <div class="col borde">3</div>
+          </div>
+          <div class="row">
+            <div class="col borde">6</div>
+            <div class="col borde">6</div>
+          </div>
+          <div class="row">
+            <div class="col borde">12</div>
+            
+          </div>
+          <div class="row">
+            <div class="col-2 borde">1</div>
+            <div class="col-6 borde">2</div>
+            <div class="col-4 borde">3</div>
+          </div>
+        </div>-->
+        <!--columnes extra small <576, small sm >=576px, medium md >=768px, large lg >= 992px, extralarge xl =>1200px-->
+
+        <!--DIFERENTS MIDES DE CEL·LES SEGONS LA PANTALLA
+        <hr>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-2 col-xl-12 borde">1</div>
+            <div class="col-sm-6 col-md-4 col-lg-1 col-xl-12 borde">2</div>
+            <div class="col-sm-12 col-md-4 col-lg-9 col-xl-12 borde">3</div>
+          </div>
+        </div>
+        <hr>
+        <div class="container">
+          <div class="row">
+            <div class="col borde">1</div>
+            <div class="col borde">2</div>
+            <div class="w-100"></div>
+            <div class="col borde">3</div>
+          </div>
+        </div>-->
+        <!--AMAGAR CEL·LES
+          <div class="container">
+          <div class="row">
+            <div class="col-sm-12 borde color4">HEADER</div>
+          </div>
+          <div class="row">
+            <div class="d-block d-sm-none d-md-block col-md-3 border border-info color1">LEFT</div>
+            <div class="col-sm-6 col-md-6 border border-info color2">CENTER</div>
+            <div class="col-sm-6 col-md-3 border border-info color3">RIGTH</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 borde color4">FOOTER</div>
+          </div>
+        </div>-->
+        <!-- aliniament:https://v4-alpha.getbootstrap.com/layout/grid/#alignment -->
+
+        <!-- CLASSE FLEX: https://getbootstrap.com/docs/4.1/utilities/flex/ -->
+        <div class="container">
+
+            <div class="d-flex flex-row justify-content-start border">
+                <div class="border">Flex item 1</div>  <!-- p-2 es padding, distancia al borde que lo contiene -->
+                <div class="p-2 border">Flex item 2</div>
+                <div class="p-3 border">Flex item 3</div>
+            </div>
+            <div class="d-flex flex-row-reverse justify-content-center align-items-md-end borde">
+                <div class="p-2 border">Flex item 1</div>
+                <div class="p-2 border">Flex item 2</div>
+                <div class="p-2 border">Flex item 3</div>
+            </div>
+            <!-- CLASSES ALIGN: https://getbootstrap.com/docs/4.1/utilities/vertical-align/ -->
+            <div class="row align-items-center color1 border border-danger">
+                <div class="col border border-info color2">
+                    Aliniació One of three columns
+                </div>
+                <div class="col border border-info color2">
+                    Aliniació One of three columns
+                </div>
+                <div class="col border border-info color2">
+                    Aliniació  One of three columns
+                </div>
+            </div>
+
+            <div class="row color1 border border-danger">
+                <div class="col align-self-start border border-info color2">
+                    Aliniació One of three columns
+                </div>
+                <div class="col align-self-center border border-info color2">
+                    Aliniació One of three columns
+                </div>
+                <div class="col align-self-end border border-info color2">
+                    Aliniació One of three columns
+                </div>
+            </div>
+            <div class="row color1 border border-danger justify-content-start">
+                <div class="col-4 color2 border border-info ">
+                    Aliniació One of two columns
+                </div>
+                <div class="col-4 color2 border border-info ">
+                    Aliniació One of two columns
+                </div>
+            </div>
+            <div class="row color1 border border-danger justify-content-center">
+                <div class="col-4 color2 border border-info">
+                    Aliniació One of two columns
+                </div>
+                <div class="col-4 color2 border border-info">
+                    Aliniació One of two columns
+                </div>
+            </div>
+            <div class="row color1 border border-danger justify-content-end">
+                <div class="col-4 color2 border border-info">
+                    Aliniació One of two columns
+                </div>
+                <div class="col-4 color2 border border-info">
+                    Aliniació One of two columns
+                </div>
+            </div>
+            <div class="row color1 border border-danger justify-content-around">
+                <div class="col-4 color2 border border-info">
+                    Aliniació One of two columns
+                </div>
+                <div class="col-4 color2 border border-info">
+                    Aliniació One of two columns
+                </div>
+            </div>
+            <div class="row color1 border border-danger justify-content-between">
+                <div class="col-4 color2 border border-info">
+                    Aliniació One of two columns
+                </div>
+                <div class="col-4 color2 border border-info">
+                    Aliniació One of two columns
+                </div>
+            </div>
+        </div>
+        <!-- FlexBox -->
+        <section class="container-fluid slider d-flex justify-content-center align-items-center">
+            <h1 class="display-4"> Bootstrap 4</h1>
+        </section>
+        <!--MENUS : 
+          https://getbootstrap.com/docs/4.1/components/navbar/
+          https://getbootstrap.com/docs/4.1/components/navs/
+        -->
+        <div class="container-fluid">
+            MENU FIXAT A DALT
+            <nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-sm">
+                <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" 
+                        data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/chat_noir.svg" width="40" height="40" class="d-inline-block align-top" alt="Logo chat">
+                    Ejemplo clase
+                </a>
+                <!--AQUESTA CLASSE COL·LAPSA EN MIDA MÒBIL, QUAN HO FACI TOT A L'ESQUERRA!-->
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <div class="navbar-nav mr-auto mr-left text-left">
+                        <a class="nav-item nav-link active" href="#">Inicio</a>
+                        <a class="nav-item nav-link" href="#">Nosotros</a>
+                        <a class="nav-item nav-link" href="#">Servicios</a>
+                        <a class="nav-item nav-link " href="#">Contactos</a>
+                    </div>
+                </div>
+                <!--SEMPRE QUEDEN A LA DRETA, CLASSE MR-2-->
+                <div class="d-flex flex-row justify-content-center">
+                    <a class="btn btn-info mr-2" href="#">I</a>
+                    <a class="btn btn-success" href="#">S</a>
+                </div>
+
+
+            </nav>
+        </div>
+        
+        <!-- 
+          ESPAIATS https://getbootstrap.com/docs/4.1/utilities/spacing/
+          TIPOGRAFIA https://getbootstrap.com/docs/4.1/content/typography/
+          TEXTE https://getbootstrap.com/docs/4.1/utilities/text/
+        16 px es absoluto y se aplica a todo el html por defecto
+        2rem es el doble de 16 px
+        -->
+        <section class="container">
+
+            <p class="mt-3 pt-5 text-center text-uppercase font-italic font-weight-bold ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, numquam?</p>
+            <p class="text-danger">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat autem amet sint quibusdam repudiandae. Esse, tempore neque quisquam quibusdam hic culpa beatae saepe rem, fugit nam, quos vel pariatur consequuntur.</p>
+            <p class="bg-primary text-white p-4 text-justify w-50 float-right mr-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat autem amet sint quibusdam repudiandae. Esse, tempore neque quisquam quibusdam hic culpa beatae saepe rem, fugit nam, quos vel pariatur consequuntur.</p>
+            <p>Lorem ipsum dolor, sit amet co  nsectetur adipisicing elit. Quaerat autem amet sint quibusdam repudiandae. Esse, tempore neque quisquam quibusdam hic culpa beatae saepe rem, fugit nam, quos vel pariatur consequuntur.</p>
+            <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat autem amet sint quibusdam repudiandae. Esse, tempore neque quisquam quibusdam hic culpa beatae saepe rem, fugit nam, quos vel pariatur consequuntur.</p>
+            <p class="bg-info text-white p-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat autem amet sint quibusdam repudiandae. Esse, tempore neque quisquam quibusdam hic culpa beatae saepe rem, fugit nam, quos vel pariatur consequuntur.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat autem amet sint quibusdam repudiandae. Esse, tempore neque quisquam quibusdam hic culpa beatae saepe rem, fugit nam, quos vel pariatur consequuntur.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat autem amet sint quibusdam repudiandae. Esse, tempore neque quisquam quibusdam hic culpa beatae saepe rem, fugit nam, quos vel pariatur consequuntur.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat autem amet sint quibusdam repudiandae. Esse, tempore neque quisquam quibusdam hic culpa beatae saepe rem, fugit nam, quos vel pariatur consequuntur.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat autem amet sint quibusdam repudiandae. Esse, tempore neque quisquam quibusdam hic culpa beatae saepe rem, fugit nam, quos vel pariatur consequuntur.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat autem amet sint quibusdam repudiandae. Esse, tempore neque quisquam quibusdam hic culpa beatae saepe rem, fugit nam, quos vel pariatur consequuntur.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat autem amet sint quibusdam repudiandae. Esse, tempore neque quisquam quibusdam hic culpa beatae saepe rem, fugit nam, quos vel pariatur consequuntur.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat autem amet sint quibusdam repudiandae. Esse, tempore neque quisquam quibusdam hic culpa beatae saepe rem, fugit nam, quos vel pariatur consequuntur.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat autem amet sint quibusdam repudiandae. Esse, tempore neque quisquam quibusdam hic culpa beatae saepe rem, fugit nam, quos vel pariatur consequuntur.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat autem amet sint quibusdam repudiandae. Esse, tempore neque quisquam quibusdam hic culpa beatae saepe rem, fugit nam, quos vel pariatur consequuntur.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat autem amet sint quibusdam repudiandae. Esse, tempore neque quisquam quibusdam hic culpa beatae saepe rem, fugit nam, quos vel pariatur consequuntur.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat autem amet sint quibusdam repudiandae. Esse, tempore neque quisquam quibusdam hic culpa beatae saepe rem, fugit nam, quos vel pariatur consequuntur.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat autem amet sint quibusdam repudiandae. Esse, tempore neque quisquam quibusdam hic culpa beatae saepe rem, fugit nam, quos vel pariatur consequuntur.</p>
+
+
+        </section>
+    </body>
+</html>

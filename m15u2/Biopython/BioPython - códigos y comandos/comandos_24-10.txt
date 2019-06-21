@@ -1,0 +1,112 @@
+Imports:
+from Bio import SeqIO
+from Bio.Seq import Seq
+from Bio.Alphabet import IUPAC
+from Bio.SeqRecord import SeqRecord
+
+*******************************************************************************************************************************************
+
+Leer un registro en un fichero
+
+yersinia_pestis_gb_rec = SeqIO.read("NC_005816.gb", "genbank")
+
+********************************************************************************************************************************
+
+Ejercicio: buscar el features que esté en la localización 4350:
+
+my_snp = 4350
+
+for feature in yersinia_pestis_gb_rec.features:
+    if my_snp in feature:
+        print(f"{feature.qualifiers.get('db_xref')}")
+
+Otra manera:
+
+for feature in yersinia_pestis_gb_rec.features:
+    if (my_snp >= feature.location.start) and (my_snp <= feature.location.end):
+        print(f"{feature.qualifiers.get('db_xref')}")
+
+Otra 
+
+for feature in yersinia_pestis_gb_rec.features:
+    if (my_snp >= feature.location.start) and (my_snp <= feature.location.end):
+        print(f"La referencia es: {feature.qualifiers.['db_xref']}")
+
+
+********************************************************************************************************************************
+
+
+SeqIO te deja escribir ficheros aparte de leer:
+
+yersinia_pestis_gb_rec = SeqIO.read("NC_005816.gb", "genbank")
+SeqIO.write(yersinia_pestis_gb_rec, "my_yersinia.gb", "genbank")
+!diff my_yersinia.gb NC_005816.gb
+
+*****************************************************************
+
+Parsear una lista de secuencias: primero escribimos esa lista en un fichero con formato gb y luego lo parseamos:
+
+
+my_recs = [yersinia_pestis_gb_rec, yersinia_pestis_gb_rec, yersinia_pestis_gb_rec]
+my_recs
+SeqIO.write(my_recs, "my_yersinias.gb", "genbank")
+for seq_record in SeqIO.parse("my_recs", "gb"):
+    print(seq_record)
+
+
+
+****************************************
+
+Buscamos los "organisms" de un fichero gb con múltiples registros
+
+In [5]: history
+from Bio import SeqIO
+from Bio.Seq import Seq
+from Bio.Alphabet import IUPAC
+from Bio.SeqRecord import SeqRecord
+for seq_record in SeqIO.parse("ls_orchid.gbk", "gb"):
+    print(seq_record.annotations["organism"])
+my_array=[]
+for seq_record in SeqIO.parse("ls_orchid.gbk", "gb"):
+    my_array.append(seq_record.annotations["organism"])
+print(my_array)
+history
+
+*****
+lo mismo pero con list comprehension
+my_array = [seq_record.annotations["organism"] for seq_record in SeqIO.p
+   ...: arse("ls_orchid.gbk", "gb")]
+
+***************************************************************************************
+
+Al hacer un slice de una secuencia devuelve un nuevo objeto secuencia más pequeño con todos sus identificadores:
+
+
+yersinia_pestis_gb_rec = SeqIO.read("NC_005816.gb", "genbank")
+yersinia_pestis_gb_rec
+yersinia_pestis_gb_rec.seq
+yersinia_pestis_gb_rec.seq[0:3500]
+yersinia_pestis_gb_rec.[0:3500]
+yersinia_pestis_gb_rec[0:3500]
+yersinia_petit = yersinia_pestis_gb_rec[0:3500]
+yersinia_petit
+len(yersinia_petit.features)
+len(yersinia_pestis_gb_rec.features)
+
+
+***************************************************************
+
+Para ver las bases de datos accesibles desde Entrez
+
+from Bio import Entrez
+
+Entrez.email = "..@..com"
+
+xml_dbs_io = Entrez.einfo()   #_io.TextIOWrapper
+dbs = Entrez.read(xml_dbs_io)
+xml_dbs_io.close()
+
+
+
+
+

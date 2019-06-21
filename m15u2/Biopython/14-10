@@ -1,0 +1,34 @@
+44155783-s
+618075105
+
+
+
+from Bio.Blast import NCBIWWW
+
+# query = "8332116"
+
+query = get_dna_seq("insulin_homo_sapiens.gb")
+query = "GATACCATCCTGA..."
+
+result_stream = NCBIWWW.qblast("blastn", "nt", query)
+
+with open("blast_results.xml", "w") as xml_file:
+	xml_file.write(result_stream.read())
+
+result_stream.close()
+
+
+
+from Bio.Blast import NCBIXML
+
+with open ("blast_results.xml", "r") as xml_file:
+	blast_record = NCBIXML.read(xml_file)
+
+xml_file = open("blast_results.xml", "r")
+
+blast_records = NCBIXML.parse(xml_file)
+
+xml_file.close()
+
+
+	

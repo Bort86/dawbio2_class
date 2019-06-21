@@ -1,0 +1,172 @@
+{
+  "id": "0672f4f3-eedd-4c65-b785-b38eb614cf0b",
+  "version": "2.0",
+  "name": "Fedex",
+  "url": "https://www.fedex.com",
+  "tests": [{
+    "id": "6e9ce244-21e7-407f-8ac7-a081f604ea06",
+    "name": "T01 Check pending status",
+    "commands": [{
+      "id": "3138d027-5297-48f9-bb7a-cf537b903be8",
+      "comment": "",
+      "command": "open",
+      "target": "/es-es/tracking.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b97ff1c4-ff80-4f9b-8fb2-c341d986a186",
+      "comment": "",
+      "command": "click",
+      "target": "id=track_inbox_track_numbers_area",
+      "targets": [
+        ["id=track_inbox_track_numbers_area", "id"],
+        ["css=#track_inbox_track_numbers_area", "css:finder"],
+        ["xpath=//input[@id='track_inbox_track_numbers_area']", "xpath:attributes"],
+        ["xpath=//div[@id='number']/div/form/div/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f02caee2-a6cc-4f43-9770-1bbaee1bab28",
+      "comment": "",
+      "command": "type",
+      "target": "id=track_inbox_track_numbers_area",
+      "targets": [
+        ["id=track_inbox_track_numbers_area", "id"],
+        ["css=#track_inbox_track_numbers_area", "css:finder"],
+        ["xpath=//input[@id='track_inbox_track_numbers_area']", "xpath:attributes"],
+        ["xpath=//div[@id='number']/div/form/div/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "e1a2dba9-41c5-447b-b621-e0159f3629c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.track_inbox_track_submit_button:nth-child(2)",
+      "targets": [
+        ["css=.track_inbox_track_submit_button:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='number']/div/form/div/div/form/div/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'REALIZAR SEGUIMIENTO')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "61f51be2-6b7b-4bf8-a21e-793fbe7ebbe3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.redesignPageableTableTVC:nth-child(2) .duplicateResolution_textUnderline",
+      "targets": [
+        ["css=.redesignPageableTableTVC:nth-child(2) .duplicateResolution_textUnderline", "css:finder"],
+        ["xpath=//div[@id='container']/div/div/div[2]/div/div/div[2]/div[3]/div/div[3]/div/div[2]/div/div/div/table/tbody/tr[2]/td/div/div", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8f9b95a-4cd6-4f6d-9c70-d1136e8da296",
+      "comment": "",
+      "command": "click",
+      "target": "css=.snapshotController_date",
+      "targets": [
+        ["css=.snapshotController_date", "css:finder"],
+        ["xpath=//div[@id='container']/div/div/div[2]/div/div/div[2]/div[3]/div/div[3]/div/div/div/div[2]/h1/div[2]", "xpath:idRelative"],
+        ["xpath=//h1/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dac25801-8c16-4d09-a452-3e69df1614bb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.snapshotController_date",
+      "targets": [
+        ["css=.snapshotController_date", "css:finder"],
+        ["xpath=//div[@id='container']/div/div/div[2]/div/div/div[2]/div[3]/div/div[3]/div/div/div/div[2]/h1/div[2]", "xpath:idRelative"],
+        ["xpath=//h1/div[2]", "xpath:position"]
+      ],
+      "value": "Pendiente"
+    }]
+  }, {
+    "id": "252e533d-a11a-4a8a-b187-28dfc1831590",
+    "name": "T02 Check confirmed",
+    "commands": [{
+      "id": "d65bec48-887d-4067-8529-7bb33c521c5e",
+      "comment": "",
+      "command": "open",
+      "target": "/es-es/tracking.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1f0019b-b61f-4b52-8f08-b7d6c1dac7f8",
+      "comment": "",
+      "command": "click",
+      "target": "id=track_inbox_track_numbers_area",
+      "targets": [
+        ["id=track_inbox_track_numbers_area", "id"],
+        ["css=#track_inbox_track_numbers_area", "css:finder"],
+        ["xpath=//input[@id='track_inbox_track_numbers_area']", "xpath:attributes"],
+        ["xpath=//div[@id='number']/div/form/div/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2687adaa-f078-4461-8afc-68ac9eea42a4",
+      "comment": "",
+      "command": "type",
+      "target": "id=track_inbox_track_numbers_area",
+      "targets": [
+        ["id=track_inbox_track_numbers_area", "id"],
+        ["css=#track_inbox_track_numbers_area", "css:finder"],
+        ["xpath=//input[@id='track_inbox_track_numbers_area']", "xpath:attributes"],
+        ["xpath=//div[@id='number']/div/form/div/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "425563133590"
+    }, {
+      "id": "fddfeb1f-5f20-4349-9265-2cc16fee12fe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.track_inbox_track_submit_button:nth-child(2)",
+      "targets": [
+        ["css=.track_inbox_track_submit_button:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='number']/div/form/div/div/form/div/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'REALIZAR SEGUIMIENTO')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44682aaf-8ac1-4623-9d16-bd7b37446b02",
+      "comment": "",
+      "command": "click",
+      "target": "css=.snapshotController_date",
+      "targets": [
+        ["css=.snapshotController_date", "css:finder"],
+        ["xpath=//div[@id='container']/div/div/div[2]/div/div/div[2]/div[3]/div/div[3]/div/div/div/div[2]/h1/div[2]", "xpath:idRelative"],
+        ["xpath=//h1/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31ff4ede-64d3-470b-88e6-80f2d15fbb66",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.snapshotController_date",
+      "targets": [
+        ["css=.snapshotController_date", "css:finder"],
+        ["xpath=//div[@id='container']/div/div/div[2]/div/div/div[2]/div[3]/div/div[3]/div/div/div/div[2]/h1/div[2]", "xpath:idRelative"],
+        ["xpath=//h1/div[2]", "xpath:position"]
+      ],
+      "value": "Viernes 09/03/2018 a las 14:03"
+    }]
+  }],
+  "suites": [{
+    "id": "c5245ccd-3dee-459e-9681-fcb90645a039",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.fedex.com/"],
+  "plugins": []
+}

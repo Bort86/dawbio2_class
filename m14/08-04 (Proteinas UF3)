@@ -1,0 +1,32 @@
+UF3 Proteínas
+
+. Estereoisómeros
+Moléculas con la misma fórmula química pero no son superponibles en 3-d
+-- Tienen las mismas propiedades químicas
+-- Tienen las mismas propiedades físicas SALVO el giro de la luz polarizada
+. Síntesis química = tiene 50%L y 50%D (L=levo)
+. Síntesis biológica = tiene 100% de L o de D (D=dextro)
+
+. Dipéptido
+aa1+aa2 > aa1-aa2
+
+Los aminoácidos más sencillos son la Glicina, porque su radical es un átomo de hidrógeno, y la Alanina, cuyo radical es un CH3
+
+Suma: página 6 del pdf
+
+Las proteínas, y las polipéptidas, tmb tienen direccionalidad, como el adn. En su anotación, en la izquierda va el grupo amino, luego la secuencia y luego el grupo carboxilo
+
+amino - aa1 - aa2 - aa3 - aa4 - carboxilo terminal
+
+Siempre se engancha el pequeño al terminal del más grande, por la estructura 3d de la más grande
+
+En la síntesis química, para un n de x y un n de y, x + y pueda dar lugar a :
+	. x-x
+	. x-y
+	. y-y
+	. y-x
+En cambio en la síntesis biológica sólo se observa un resultado (puede ser x-y, x-x, etc, pero solo 1)
+
+Acoplamiento molecular o Docking (del inglés, anclarse). En el campo del Modelado molecular, este es un método que predice la conformación preferida de una molécula, al estar unida a otra, con el fin de formar un complejo estable
+
+Splicing alternativo: permite que haya más proteínas (100k) que genes (20k)

@@ -1,0 +1,5 @@
+Configurar AllowOverride en etc/apache2/apache2.conf:
+
+directory donde esté mi proyecto
+
+AllowOverride All
